@@ -31,6 +31,8 @@ export interface Product {
   compareAtPrice?: Money; // for "sale" badges
   variants: ProductVariant[];
   tags: string[];
+  /** Optional spec grid for the quick-view popup (origin / notes / format) */
+  meta?: { origin?: string; notes?: string; format?: string };
   collectionHandles: string[];
 }
 
