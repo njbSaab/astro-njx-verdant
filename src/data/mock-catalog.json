@@ -1,0 +1,544 @@
+{
+  "collections": [
+    {
+      "id": "c1",
+      "handle": "dresses",
+      "title": "Dresses & Skirts",
+      "description": "Bias-cut silk, heavy linen, brushed wool — pieces that move first."
+    },
+    {
+      "id": "c2",
+      "handle": "knitwear",
+      "title": "Knitwear",
+      "description": "Merino and alpaca, knitted to keep their shape and their promises."
+    },
+    {
+      "id": "c3",
+      "handle": "outerwear",
+      "title": "Outerwear",
+      "description": "The layer everyone sees. Cut clean, made to be worn for a decade."
+    },
+    {
+      "id": "c4",
+      "handle": "accessories",
+      "title": "Accessories",
+      "description": "Leather and alpaca details that finish the outfit quietly."
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "handle": "wool-wrap-coat",
+      "title": "The Wrap Coat",
+      "description": "Double-faced Italian wool, no lining to hide behind. Ties at the waist, falls below the knee, shoulders cut for a sweater underneath. The coat you plan outfits around.",
+      "images": [
+        {
+          "src": "/products/wool-wrap-coat.jpg",
+          "alt": "The Wrap Coat"
+        }
+      ],
+      "price": {
+        "amount": 240,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p1v1",
+          "title": "S",
+          "price": {
+            "amount": 240,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p1v2",
+          "title": "M",
+          "price": {
+            "amount": 240,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p1v3",
+          "title": "L",
+          "price": {
+            "amount": 240,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "wool",
+        "tailored"
+      ],
+      "collectionHandles": [
+        "outerwear"
+      ]
+    },
+    {
+      "id": "p2",
+      "handle": "belted-trench",
+      "title": "Belted Trench",
+      "description": "Bone-dry cotton gabardine with a matte finish. Storm flap, horn buttons, a belt you will actually tie. Reads polished over a dress and unbothered over denim.",
+      "images": [
+        {
+          "src": "/products/belted-trench.jpg",
+          "alt": "Belted Trench"
+        }
+      ],
+      "price": {
+        "amount": 210,
+        "currency": "USD"
+      },
+      "compareAtPrice": {
+        "amount": 260,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p2v1",
+          "title": "S",
+          "price": {
+            "amount": 210,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p2v2",
+          "title": "M",
+          "price": {
+            "amount": 210,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p2v3",
+          "title": "L",
+          "price": {
+            "amount": 210,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "cotton",
+        "sale"
+      ],
+      "collectionHandles": [
+        "outerwear"
+      ]
+    },
+    {
+      "id": "p3",
+      "handle": "linen-shift-dress",
+      "title": "Linen Shift Dress",
+      "description": "Heavy Belgian linen that holds its shape and softens by the wash. Pockets set deep enough to trust. The dress for every day you refuse to think about clothes.",
+      "images": [
+        {
+          "src": "/products/linen-shift-dress.jpg",
+          "alt": "Linen Shift Dress"
+        }
+      ],
+      "price": {
+        "amount": 120,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p3v1",
+          "title": "XS",
+          "price": {
+            "amount": 120,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p3v2",
+          "title": "S",
+          "price": {
+            "amount": 120,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p3v3",
+          "title": "M",
+          "price": {
+            "amount": 120,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p3v4",
+          "title": "L",
+          "price": {
+            "amount": 120,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "linen",
+        "pockets"
+      ],
+      "collectionHandles": [
+        "dresses"
+      ]
+    },
+    {
+      "id": "p4",
+      "handle": "silk-slip-dress",
+      "title": "Silk Slip Dress",
+      "description": "Sand-washed 19-momme silk, bias-cut so it moves before you do. Adjustable straps, midi length. Wear it to dinner now and under the merino crew in November.",
+      "images": [
+        {
+          "src": "/products/silk-slip-dress.jpg",
+          "alt": "Silk Slip Dress"
+        }
+      ],
+      "price": {
+        "amount": 150,
+        "currency": "USD"
+      },
+      "compareAtPrice": {
+        "amount": 180,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p4v1",
+          "title": "XS",
+          "price": {
+            "amount": 150,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p4v2",
+          "title": "S",
+          "price": {
+            "amount": 150,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p4v3",
+          "title": "M",
+          "price": {
+            "amount": 150,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "silk",
+        "evening",
+        "sale"
+      ],
+      "collectionHandles": [
+        "dresses"
+      ]
+    },
+    {
+      "id": "p5",
+      "handle": "wool-midi-skirt",
+      "title": "Wool Midi Skirt",
+      "description": "A-line in brushed wool flannel with a clean waistband and a quiet side zip. Swings when you walk, behaves when you sit.",
+      "images": [
+        {
+          "src": "/products/wool-midi-skirt.jpg",
+          "alt": "Wool Midi Skirt"
+        }
+      ],
+      "price": {
+        "amount": 98,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p5v1",
+          "title": "XS",
+          "price": {
+            "amount": 98,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p5v2",
+          "title": "S",
+          "price": {
+            "amount": 98,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p5v3",
+          "title": "M",
+          "price": {
+            "amount": 98,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p5v4",
+          "title": "L",
+          "price": {
+            "amount": 98,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "wool",
+        "tailored"
+      ],
+      "collectionHandles": [
+        "dresses"
+      ]
+    },
+    {
+      "id": "p6",
+      "handle": "merino-crew",
+      "title": "Merino Crew",
+      "description": "Extra-fine merino, knitted dense enough to keep its collar. Layers flat under coats, breathes on its own. The sweater that outlives trends by ignoring them.",
+      "images": [
+        {
+          "src": "/products/merino-crew.jpg",
+          "alt": "Merino Crew"
+        }
+      ],
+      "price": {
+        "amount": 95,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p6v1",
+          "title": "S",
+          "price": {
+            "amount": 95,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p6v2",
+          "title": "M",
+          "price": {
+            "amount": 95,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p6v3",
+          "title": "L",
+          "price": {
+            "amount": 95,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "merino",
+        "layering"
+      ],
+      "collectionHandles": [
+        "knitwear"
+      ]
+    },
+    {
+      "id": "p7",
+      "handle": "ribbed-cardigan",
+      "title": "Ribbed Cardigan",
+      "description": "Chunky rib in a wool-alpaca blend with corozo buttons. Falls straight, sits open or closed. Somewhere between a cardigan and a soft jacket.",
+      "images": [
+        {
+          "src": "/products/ribbed-cardigan.jpg",
+          "alt": "Ribbed Cardigan"
+        }
+      ],
+      "price": {
+        "amount": 110,
+        "currency": "USD"
+      },
+      "compareAtPrice": {
+        "amount": 135,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p7v1",
+          "title": "S",
+          "price": {
+            "amount": 110,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p7v2",
+          "title": "M",
+          "price": {
+            "amount": 110,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p7v3",
+          "title": "L",
+          "price": {
+            "amount": 110,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "alpaca",
+        "sale"
+      ],
+      "collectionHandles": [
+        "knitwear"
+      ]
+    },
+    {
+      "id": "p8",
+      "handle": "canvas-tote",
+      "title": "Canvas Tote",
+      "description": "Twelve-ounce cotton canvas with reinforced handles and a flat bottom that stands on its own. Fits a 13-inch laptop, a paperback and the fruit you bought on the way. One inner pocket, no logos.",
+      "images": [
+        {
+          "src": "/products/canvas-tote.jpg",
+          "alt": "Canvas Tote"
+        }
+      ],
+      "price": {
+        "amount": 160,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p8v1",
+          "title": "One size",
+          "price": {
+            "amount": 160,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "canvas"
+      ],
+      "collectionHandles": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "p9",
+      "handle": "alpaca-scarf",
+      "title": "Alpaca Scarf",
+      "description": "Baby alpaca, woven wide enough to double as a shawl on cold trains. Featherweight, warmer than it admits.",
+      "images": [
+        {
+          "src": "/products/alpaca-scarf.jpg",
+          "alt": "Alpaca Scarf"
+        }
+      ],
+      "price": {
+        "amount": 55,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p9v1",
+          "title": "One size",
+          "price": {
+            "amount": 55,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "alpaca",
+        "gift"
+      ],
+      "collectionHandles": [
+        "accessories"
+      ]
+    },
+    {
+      "id": "p10",
+      "handle": "leather-belt",
+      "title": "Slim Leather Belt",
+      "description": "Full-grain bridle leather with a solid brass buckle, cut slim for dresses and high waists. Darkens beautifully with wear.",
+      "images": [
+        {
+          "src": "/products/leather-belt.jpg",
+          "alt": "Slim Leather Belt"
+        }
+      ],
+      "price": {
+        "amount": 45,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p10v1",
+          "title": "S",
+          "price": {
+            "amount": 45,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p10v2",
+          "title": "M",
+          "price": {
+            "amount": 45,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p10v3",
+          "title": "L",
+          "price": {
+            "amount": 45,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "leather",
+        "gift"
+      ],
+      "collectionHandles": [
+        "accessories"
+      ]
+    }
+  ]
+}
