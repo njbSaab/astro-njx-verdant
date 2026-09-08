@@ -128,9 +128,14 @@ const serviceIcons: Record<string, string> = {
           {T.colophon.title}
         </h2>
         <p class="mt-4 text-[15px] leading-relaxed text-white/85">{T.colophon.text}</p>
-        <a href={T.colophon.cta.href} class="mt-7 inline-block rounded-md border-2 border-white px-7 py-3 text-[14px] font-bold uppercase tracking-wide text-white transition hover:bg-white hover:text-[#120d0a]">
-          {T.colophon.cta.label}
-        </a>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href={T.colophon.cta.href} class="inline-block rounded-md border-2 border-white px-7 py-3 text-[14px] font-bold uppercase tracking-wide text-white transition hover:bg-white hover:text-[#120d0a]">
+            {T.colophon.cta.label}
+          </a>
+          <a href={T.colophon.cta2.href} class="inline-block rounded-md border-2 border-transparent px-7 py-3 text-[14px] font-bold uppercase tracking-wide text-white/80 underline decoration-white/40 underline-offset-4 transition hover:text-white">
+            {T.colophon.cta2.label}
+          </a>
+        </div>
       </div>
     </div>
   </section>

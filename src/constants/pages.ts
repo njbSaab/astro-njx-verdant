@@ -54,6 +54,7 @@ export const HOME = {
     title: 'This apothecary is a theme. Take it.',
     text: 'Cart, search, saved-for-later, the quick-view popup, checkout — all of it is astro-njx-verdant, a static storefront you can fork today. Point one env var at your Shopify store and these pages rebuild from your real catalog.',
     cta: { label: 'Get the theme on GitHub', href: SITE.repoUrl },
+    cta2: { label: 'All themes & Pro', href: SITE.themesUrl },
     image: { src: '/products/banner.jpg', alt: 'Hands giving a botanical oil massage' },
   },
 } as const;
