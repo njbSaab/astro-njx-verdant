@@ -2,542 +2,547 @@
   "collections": [
     {
       "id": "c1",
-      "handle": "dresses",
-      "title": "Dresses & Skirts",
-      "description": "Bias-cut silk, heavy linen, brushed wool — pieces that move first."
+      "handle": "coffee",
+      "title": "Premium Coffee",
+      "description": "Small-batch beans, roasted this week and sealed at peak aroma."
     },
     {
       "id": "c2",
-      "handle": "knitwear",
-      "title": "Knitwear",
-      "description": "Merino and alpaca, knitted to keep their shape and their promises."
+      "handle": "creamers",
+      "title": "Premium Creamers",
+      "description": "Barista-grade creamers that steam, foam and never split."
     },
     {
       "id": "c3",
-      "handle": "outerwear",
-      "title": "Outerwear",
-      "description": "The layer everyone sees. Cut clean, made to be worn for a decade."
+      "handle": "merch",
+      "title": "Merch & Objects",
+      "description": "Stoneware, waxed canvas and objects that live next to the machine."
     },
     {
       "id": "c4",
-      "handle": "accessories",
-      "title": "Accessories",
-      "description": "Leather and alpaca details that finish the outfit quietly."
+      "handle": "gear",
+      "title": "Brew Gear",
+      "description": "Grinders, kettles and kits — the hardware behind a serious cup."
+    },
+    {
+      "id": "c5",
+      "handle": "capsules",
+      "title": "Capsules",
+      "description": "Our roast profiles, sealed in recyclable aluminium."
+    },
+    {
+      "id": "c6",
+      "handle": "gifts",
+      "title": "Gift Sets",
+      "description": "Boxed combinations that make you look like you tried very hard."
     }
   ],
   "products": [
     {
       "id": "p1",
-      "handle": "wool-wrap-coat",
-      "title": "The Wrap Coat",
-      "description": "Double-faced Italian wool, no lining to hide behind. Ties at the waist, falls below the knee, shoulders cut for a sweater underneath. The coat you plan outfits around.",
+      "handle": "midnight-espresso",
+      "title": "Midnight Espresso",
+      "description": "A blood-dark blend of Brazilian and Ethiopian beans, roasted past the second crack for a crema that holds a spoon. Chocolate, black cherry, no apologies.",
       "images": [
         {
-          "src": "/products/wool-wrap-coat.jpg",
-          "alt": "The Wrap Coat"
+          "src": "/products/midnight-espresso.jpg",
+          "alt": "Midnight Espresso"
         }
       ],
       "price": {
-        "amount": 240,
+        "amount": 18,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p1v1",
-          "title": "S",
+          "title": "250 g",
           "price": {
-            "amount": 240,
+            "amount": 18,
             "currency": "USD"
           },
           "available": true
         },
         {
           "id": "p1v2",
-          "title": "M",
+          "title": "500 g",
           "price": {
-            "amount": 240,
+            "amount": 18,
             "currency": "USD"
           },
           "available": true
         },
         {
           "id": "p1v3",
-          "title": "L",
+          "title": "1 kg",
           "price": {
-            "amount": 240,
+            "amount": 18,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "wool",
-        "tailored"
+        "espresso",
+        "dark-roast"
       ],
       "collectionHandles": [
-        "outerwear"
+        "coffee"
       ]
     },
     {
       "id": "p2",
-      "handle": "belted-trench",
-      "title": "Belted Trench",
-      "description": "Bone-dry cotton gabardine with a matte finish. Storm flap, horn buttons, a belt you will actually tie. Reads polished over a dress and unbothered over denim.",
+      "handle": "velvet-lungo",
+      "title": "Velvet Lungo",
+      "description": "A long, silky cup built on washed Colombian lots. Caramel sweetness up front, toasted hazelnut underneath — the everyday luxury cup.",
       "images": [
         {
-          "src": "/products/belted-trench.jpg",
-          "alt": "Belted Trench"
+          "src": "/products/velvet-lungo.jpg",
+          "alt": "Velvet Lungo"
         }
       ],
       "price": {
-        "amount": 210,
+        "amount": 16,
         "currency": "USD"
       },
       "compareAtPrice": {
-        "amount": 260,
+        "amount": 20,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p2v1",
-          "title": "S",
+          "title": "250 g",
           "price": {
-            "amount": 210,
+            "amount": 16,
             "currency": "USD"
           },
           "available": true
         },
         {
           "id": "p2v2",
-          "title": "M",
+          "title": "500 g",
           "price": {
-            "amount": 210,
+            "amount": 16,
             "currency": "USD"
           },
           "available": true
         },
         {
           "id": "p2v3",
-          "title": "L",
+          "title": "1 kg",
           "price": {
-            "amount": 210,
+            "amount": 16,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "cotton",
+        "lungo",
+        "medium-roast",
         "sale"
       ],
       "collectionHandles": [
-        "outerwear"
+        "coffee"
       ]
     },
     {
       "id": "p3",
-      "handle": "linen-shift-dress",
-      "title": "Linen Shift Dress",
-      "description": "Heavy Belgian linen that holds its shape and softens by the wash. Pockets set deep enough to trust. The dress for every day you refuse to think about clothes.",
+      "handle": "single-origin-yirgacheffe",
+      "title": "Yirgacheffe Single Origin",
+      "description": "One farm, one harvest, one roast profile. Bergamot and apricot brightness that makes filter coffee feel like an occasion.",
       "images": [
         {
-          "src": "/products/linen-shift-dress.jpg",
-          "alt": "Linen Shift Dress"
+          "src": "/products/single-origin-yirgacheffe.jpg",
+          "alt": "Yirgacheffe Single Origin"
         }
       ],
       "price": {
-        "amount": 120,
+        "amount": 22,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p3v1",
-          "title": "XS",
+          "title": "250 g",
           "price": {
-            "amount": 120,
+            "amount": 22,
             "currency": "USD"
           },
           "available": true
         },
         {
           "id": "p3v2",
-          "title": "S",
+          "title": "500 g",
           "price": {
-            "amount": 120,
+            "amount": 22,
             "currency": "USD"
           },
           "available": true
         },
         {
           "id": "p3v3",
-          "title": "M",
+          "title": "1 kg",
           "price": {
-            "amount": 120,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p3v4",
-          "title": "L",
-          "price": {
-            "amount": 120,
+            "amount": 22,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "linen",
-        "pockets"
+        "single-origin",
+        "light-roast"
       ],
       "collectionHandles": [
-        "dresses"
+        "coffee"
       ]
     },
     {
       "id": "p4",
-      "handle": "silk-slip-dress",
-      "title": "Silk Slip Dress",
-      "description": "Sand-washed 19-momme silk, bias-cut so it moves before you do. Adjustable straps, midi length. Wear it to dinner now and under the merino crew in November.",
+      "handle": "oat-cloud-creamer",
+      "title": "Oat Cloud Creamer",
+      "description": "Barista-grade oat creamer that steams into a dense microfoam and never splits in hot coffee. Quietly sweet, nothing artificial.",
       "images": [
         {
-          "src": "/products/silk-slip-dress.jpg",
-          "alt": "Silk Slip Dress"
+          "src": "/products/oat-cloud-creamer.jpg",
+          "alt": "Oat Cloud Creamer"
         }
       ],
       "price": {
-        "amount": 150,
-        "currency": "USD"
-      },
-      "compareAtPrice": {
-        "amount": 180,
+        "amount": 9,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p4v1",
-          "title": "XS",
+          "title": "6-pack",
           "price": {
-            "amount": 150,
+            "amount": 9,
             "currency": "USD"
           },
           "available": true
         },
         {
           "id": "p4v2",
-          "title": "S",
+          "title": "12-pack",
           "price": {
-            "amount": 150,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p4v3",
-          "title": "M",
-          "price": {
-            "amount": 150,
+            "amount": 9,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "silk",
-        "evening",
-        "sale"
+        "oat",
+        "barista"
       ],
       "collectionHandles": [
-        "dresses"
+        "creamers"
       ]
     },
     {
       "id": "p5",
-      "handle": "wool-midi-skirt",
-      "title": "Wool Midi Skirt",
-      "description": "A-line in brushed wool flannel with a clean waistband and a quiet side zip. Swings when you walk, behaves when you sit.",
+      "handle": "vanilla-bean-creamer",
+      "title": "Vanilla Bean Creamer",
+      "description": "Real Madagascar vanilla folded into double cream. A dessert disguised as a splash.",
       "images": [
         {
-          "src": "/products/wool-midi-skirt.jpg",
-          "alt": "Wool Midi Skirt"
+          "src": "/products/vanilla-bean-creamer.jpg",
+          "alt": "Vanilla Bean Creamer"
         }
       ],
       "price": {
-        "amount": 98,
+        "amount": 11,
+        "currency": "USD"
+      },
+      "compareAtPrice": {
+        "amount": 14,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p5v1",
-          "title": "XS",
+          "title": "6-pack",
           "price": {
-            "amount": 98,
+            "amount": 11,
             "currency": "USD"
           },
           "available": true
         },
         {
           "id": "p5v2",
-          "title": "S",
+          "title": "12-pack",
           "price": {
-            "amount": 98,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p5v3",
-          "title": "M",
-          "price": {
-            "amount": 98,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p5v4",
-          "title": "L",
-          "price": {
-            "amount": 98,
+            "amount": 11,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "wool",
-        "tailored"
+        "vanilla",
+        "sale"
       ],
       "collectionHandles": [
-        "dresses"
+        "creamers"
       ]
     },
     {
       "id": "p6",
-      "handle": "merino-crew",
-      "title": "Merino Crew",
-      "description": "Extra-fine merino, knitted dense enough to keep its collar. Layers flat under coats, breathes on its own. The sweater that outlives trends by ignoring them.",
+      "handle": "roast-mug",
+      "title": "The Roast Mug",
+      "description": "Stoneware, 350 ml, matte espresso glaze with a raw clay base. Keeps heat like it means it.",
       "images": [
         {
-          "src": "/products/merino-crew.jpg",
-          "alt": "Merino Crew"
+          "src": "/products/roast-mug.jpg",
+          "alt": "The Roast Mug"
         }
       ],
       "price": {
-        "amount": 95,
+        "amount": 24,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p6v1",
-          "title": "S",
+          "title": "Default",
           "price": {
-            "amount": 95,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p6v2",
-          "title": "M",
-          "price": {
-            "amount": 95,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p6v3",
-          "title": "L",
-          "price": {
-            "amount": 95,
+            "amount": 24,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "merino",
-        "layering"
+        "stoneware",
+        "gift"
       ],
       "collectionHandles": [
-        "knitwear"
+        "merch"
       ]
     },
     {
       "id": "p7",
-      "handle": "ribbed-cardigan",
-      "title": "Ribbed Cardigan",
-      "description": "Chunky rib in a wool-alpaca blend with corozo buttons. Falls straight, sits open or closed. Somewhere between a cardigan and a soft jacket.",
+      "handle": "barista-apron",
+      "title": "Barista Apron",
+      "description": "Waxed canvas with leather straps, three pockets sized for a tamper, a cloth and a phone. Ages like a workshop bench.",
       "images": [
         {
-          "src": "/products/ribbed-cardigan.jpg",
-          "alt": "Ribbed Cardigan"
+          "src": "/products/barista-apron.jpg",
+          "alt": "Barista Apron"
         }
       ],
       "price": {
-        "amount": 110,
-        "currency": "USD"
-      },
-      "compareAtPrice": {
-        "amount": 135,
+        "amount": 48,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p7v1",
-          "title": "S",
+          "title": "Default",
           "price": {
-            "amount": 110,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p7v2",
-          "title": "M",
-          "price": {
-            "amount": 110,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p7v3",
-          "title": "L",
-          "price": {
-            "amount": 110,
+            "amount": 48,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "alpaca",
-        "sale"
+        "canvas",
+        "gift"
       ],
       "collectionHandles": [
-        "knitwear"
+        "merch"
       ]
     },
     {
       "id": "p8",
-      "handle": "canvas-tote",
-      "title": "Canvas Tote",
-      "description": "Twelve-ounce cotton canvas with reinforced handles and a flat bottom that stands on its own. Fits a 13-inch laptop, a paperback and the fruit you bought on the way. One inner pocket, no logos.",
+      "handle": "precision-grinder",
+      "title": "Precision Hand Grinder",
+      "description": "48 mm steel burrs, 40 click-stops from Turkish to French press. The upgrade that changes every cup after it.",
       "images": [
         {
-          "src": "/products/canvas-tote.jpg",
-          "alt": "Canvas Tote"
+          "src": "/products/precision-grinder.jpg",
+          "alt": "Precision Hand Grinder"
         }
       ],
       "price": {
-        "amount": 160,
+        "amount": 139,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p8v1",
-          "title": "One size",
+          "title": "Default",
           "price": {
-            "amount": 160,
+            "amount": 139,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "canvas"
+        "grinder",
+        "steel"
       ],
       "collectionHandles": [
-        "accessories"
+        "gear"
       ]
     },
     {
       "id": "p9",
-      "handle": "alpaca-scarf",
-      "title": "Alpaca Scarf",
-      "description": "Baby alpaca, woven wide enough to double as a shawl on cold trains. Featherweight, warmer than it admits.",
+      "handle": "pour-over-kit",
+      "title": "Pour-Over Kit",
+      "description": "Double-wall glass dripper, server and 40 filters. Everything the slow morning needs in one box.",
       "images": [
         {
-          "src": "/products/alpaca-scarf.jpg",
-          "alt": "Alpaca Scarf"
+          "src": "/products/pour-over-kit.jpg",
+          "alt": "Pour-Over Kit"
         }
       ],
       "price": {
-        "amount": 55,
+        "amount": 54,
+        "currency": "USD"
+      },
+      "compareAtPrice": {
+        "amount": 68,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p9v1",
-          "title": "One size",
+          "title": "Default",
           "price": {
-            "amount": 55,
+            "amount": 54,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "alpaca",
-        "gift"
+        "pour-over",
+        "glass",
+        "sale"
       ],
       "collectionHandles": [
-        "accessories"
+        "gear"
       ]
     },
     {
       "id": "p10",
-      "handle": "leather-belt",
-      "title": "Slim Leather Belt",
-      "description": "Full-grain bridle leather with a solid brass buckle, cut slim for dresses and high waists. Darkens beautifully with wear.",
+      "handle": "gooseneck-kettle",
+      "title": "Gooseneck Kettle",
+      "description": "600 ml, thermometer in the lid, a spout that pours exactly where you look. Stovetop and induction.",
       "images": [
         {
-          "src": "/products/leather-belt.jpg",
-          "alt": "Slim Leather Belt"
+          "src": "/products/gooseneck-kettle.jpg",
+          "alt": "Gooseneck Kettle"
         }
       ],
       "price": {
-        "amount": 45,
+        "amount": 62,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p10v1",
-          "title": "S",
+          "title": "Default",
           "price": {
-            "amount": 45,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p10v2",
-          "title": "M",
-          "price": {
-            "amount": 45,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p10v3",
-          "title": "L",
-          "price": {
-            "amount": 45,
+            "amount": 62,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "leather",
-        "gift"
+        "kettle",
+        "steel"
       ],
       "collectionHandles": [
-        "accessories"
+        "gear"
+      ]
+    },
+    {
+      "id": "p11",
+      "handle": "espresso-capsules",
+      "title": "Espresso Capsules ×30",
+      "description": "The Midnight Espresso profile, sealed at peak aroma. Aluminium, fully recyclable, Nespresso-compatible.",
+      "images": [
+        {
+          "src": "/products/espresso-capsules.jpg",
+          "alt": "Espresso Capsules ×30"
+        }
+      ],
+      "price": {
+        "amount": 19,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p11v1",
+          "title": "30 caps",
+          "price": {
+            "amount": 19,
+            "currency": "USD"
+          },
+          "available": true
+        },
+        {
+          "id": "p11v2",
+          "title": "60 caps",
+          "price": {
+            "amount": 19,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "capsules",
+        "espresso"
+      ],
+      "collectionHandles": [
+        "capsules"
+      ]
+    },
+    {
+      "id": "p12",
+      "handle": "starter-gift-set",
+      "title": "The Starter Gift Set",
+      "description": "Two 250 g coffees, the Roast Mug and a pour-over dripper in a matte black box. The safest excellent gift in coffee.",
+      "images": [
+        {
+          "src": "/products/starter-gift-set.jpg",
+          "alt": "The Starter Gift Set"
+        }
+      ],
+      "price": {
+        "amount": 59,
+        "currency": "USD"
+      },
+      "compareAtPrice": {
+        "amount": 72,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p12v1",
+          "title": "Default",
+          "price": {
+            "amount": 59,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "gift",
+        "box"
+      ],
+      "collectionHandles": [
+        "gifts"
       ]
     }
   ]
