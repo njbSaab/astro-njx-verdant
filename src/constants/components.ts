@@ -18,7 +18,7 @@ export const ANNOUNCEMENT = {
   text: 'Free shipping over $50 · −10% on your first order with code',
   promoCode: 'EMBER10',
   copiedLabel: 'Copied ✓',
-  linkLabel: 'Star the theme on GitHub',
+  linkLabel: 'If you star the theme, I’ll be happy ♡',
   linkHref: SITE.repoUrl,
 } as const;
 
@@ -85,7 +85,7 @@ export const FOOTER = {
 export const THANKS_MODAL = {
   emoji: '☕️',
   title: 'Thanks — the kettle is on!',
-  text: 'This is a demo store, so nothing was charged. If the theme feels right, a star on GitHub takes two seconds and helps a lot.',
+  text: 'This is a demo store, so nothing was charged. If the theme feels right, a star on GitHub would make my day ♡',
   starLabel: '⭐️ Star on GitHub',
   starHref: SITE.repoUrl,
   keepLabel: 'Keep browsing',
