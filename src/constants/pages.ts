@@ -6,7 +6,7 @@ import { SITE } from './components';
 
 export const HOME = {
   hero: {
-    title: 'Roasted in the dark.',
+    title: 'Roasted past midnight.',
     text: 'Small-batch beans, barista-grade creamers and the hardware behind a serious cup — sealed at peak aroma and shipped the same week.',
     image: { src: '/products/hero.jpg', alt: 'Pour-over brewing on a wooden counter in warm light' },
   },
@@ -23,9 +23,9 @@ export const HOME = {
   },
   // three product sliders, one per featured collection
   shelves: [
-    { collection: 'coffee', title: 'Premium Coffee', eyebrow: 'Roasted weekly', allLabel: 'All coffee' },
-    { collection: 'gear', title: 'Brewing Devices', eyebrow: 'The hardware', allLabel: 'All devices' },
-    { collection: 'creamers', title: 'Premium Creamers', eyebrow: 'Barista grade', allLabel: 'All creamers' },
+    { collection: 'coffee', title: 'Premium Coffee', allLabel: 'All coffee' },
+    { collection: 'gear', title: 'Brew Gear', allLabel: 'All gear' },
+    { collection: 'creamers', title: 'Premium Creamers', allLabel: 'All creamers' },
   ],
   services: [
     {
@@ -95,13 +95,13 @@ export const PRODUCT = {
 
 export const ABOUT = {
   meta: {
-    title: 'About — NOCTA',
-    description: 'Who roasts NOCTA: a night-shift roastery obsessed with peak aroma.',
+    title: 'About — Ember',
+    description: 'Who roasts Ember: a night-shift roastery obsessed with peak aroma.',
   },
   hero: {
     title: 'We roast when the city sleeps.',
     paragraphs: [
-      'NOCTA started with a five-kilo roaster in a rented garage and a habit of working after midnight — the only time the phone stops ringing and you can hear the first crack properly. The habit stuck; the garage grew into a roastery.',
+      'Ember started with a five-kilo roaster in a rented garage and a habit of working after midnight — the only time the phone stops ringing and you can hear the first crack properly. The habit stuck; the garage grew into a roastery.',
       'We buy from farms we can name, roast in small batches, and seal every bag the same day. When a lot runs out, the coffee changes with the season — that is the point.',
     ],
     image: { src: '/products/hero.jpg', alt: 'The roastery counter at night' },
@@ -135,15 +135,15 @@ export const ABOUT = {
 
 export const CONTACTS = {
   meta: {
-    title: 'Contacts — NOCTA',
-    description: 'Orders, wholesale, brew advice — write to the NOCTA roastery.',
+    title: 'Contacts — Ember',
+    description: 'Orders, wholesale, brew advice — write to the Ember roastery.',
   },
   title: 'Talk to the roastery',
   text: 'Orders, wholesale, or which grind fits your machine — ask. A human answers within a day.',
   cards: {
     email: {
       title: 'Email',
-      address: 'hello@nocta.demo',
+      address: 'hello@ember.demo',
       note: 'Add your order number for the fastest reply.',
     },
     warehouse: {
@@ -172,7 +172,7 @@ export const CONTACTS = {
 
 export const FAQ_PAGE = {
   meta: {
-    title: 'FAQ — NOCTA',
+    title: 'FAQ — Ember',
     description: 'Freshness, grind, shipping, returns — answers to the questions the roastery hears most.',
   },
   title: 'Asked often',
@@ -197,7 +197,7 @@ export const FAQ_PAGE = {
     },
     {
       q: 'Do you do wholesale?',
-      a: 'For cafés and offices — yes, from 5 kg a month. Email hello@nocta.demo with your volumes and machine setup.',
+      a: 'For cafés and offices — yes, from 5 kg a month. Email hello@ember.demo with your volumes and machine setup.',
     },
     {
       q: 'Is this a real roastery?',
@@ -208,8 +208,8 @@ export const FAQ_PAGE = {
 
 export const ACCOUNT = {
   meta: {
-    title: 'Account — NOCTA',
-    description: 'Sign in to your NOCTA account or create a new one.',
+    title: 'Account — Ember',
+    description: 'Sign in to your Ember account or create a new one.',
   },
   tabs: { login: 'Sign in', register: 'Create account' },
   login: {
@@ -219,7 +219,7 @@ export const ACCOUNT = {
     demoNote: 'Demo mode — sign-in is a stub. Connect Shopify Customer Accounts or your own backend here.',
   },
   register: {
-    title: 'Join NOCTA',
+    title: 'Join Ember',
     sub: 'One account for orders and first word on new roasts.',
     submit: 'Create account',
     demoNote: 'Demo mode — account creation is a stub. Connect Shopify Customer Accounts or your own backend here.',
@@ -238,7 +238,7 @@ export const ACCOUNT = {
 } as const;
 
 export const NOT_FOUND = {
-  meta: { title: 'Page not found — NOCTA' },
+  meta: { title: 'Page not found — Ember' },
   title: 'Nothing brewing here.',
   text: 'This page moved, sold out, or never existed. The good stuff is one click away.',
   ctaPrimary: { label: 'Back to the roastery', href: '/' },
@@ -247,8 +247,8 @@ export const NOT_FOUND = {
 
 export const PRIVACY = {
   meta: {
-    title: 'Privacy Policy — NOCTA',
-    description: 'How NOCTA handles your data: what we collect, why, and what we never do.',
+    title: 'Privacy Policy — Ember',
+    description: 'How Ember handles your data: what we collect, why, and what we never do.',
   },
   title: 'Privacy Policy',
   updated: 'Last updated: September 2026 · Demo content — replace with your own policy.',
@@ -274,8 +274,8 @@ export const PRIVACY = {
 
 export const TERMS = {
   meta: {
-    title: 'Terms of Service — NOCTA',
-    description: 'The short, honest terms for shopping at NOCTA: orders, shipping, returns and refunds.',
+    title: 'Terms of Service — Ember',
+    description: 'The short, honest terms for shopping at Ember: orders, shipping, returns and refunds.',
   },
   title: 'Terms of Service',
   updated: 'Last updated: September 2026 · Demo content — replace with your own terms.',

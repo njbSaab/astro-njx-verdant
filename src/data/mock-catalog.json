@@ -21,7 +21,7 @@
     {
       "id": "c4",
       "handle": "gear",
-      "title": "Brewing Devices",
+      "title": "Brew Gear",
       "description": "Grinders, kettles and kits — the hardware behind a serious cup."
     },
     {
@@ -88,12 +88,7 @@
       ],
       "collectionHandles": [
         "coffee"
-      ],
-      "meta": {
-        "origin": "Brazil · Ethiopia",
-        "notes": "Chocolate, black cherry",
-        "format": "Whole bean"
-      }
+      ]
     },
     {
       "id": "p2",
@@ -150,12 +145,7 @@
       ],
       "collectionHandles": [
         "coffee"
-      ],
-      "meta": {
-        "origin": "Colombia",
-        "notes": "Caramel, hazelnut",
-        "format": "Whole bean"
-      }
+      ]
     },
     {
       "id": "p3",
@@ -207,12 +197,7 @@
       ],
       "collectionHandles": [
         "coffee"
-      ],
-      "meta": {
-        "origin": "Ethiopia, Yirgacheffe",
-        "notes": "Bergamot, apricot",
-        "format": "Whole bean"
-      }
+      ]
     },
     {
       "id": "p4",
@@ -255,12 +240,7 @@
       ],
       "collectionHandles": [
         "creamers"
-      ],
-      "meta": {
-        "origin": "Sweden",
-        "notes": "Quietly sweet",
-        "format": "6 × 500 ml"
-      }
+      ]
     },
     {
       "id": "p5",
@@ -307,12 +287,7 @@
       ],
       "collectionHandles": [
         "creamers"
-      ],
-      "meta": {
-        "origin": "Madagascar vanilla",
-        "notes": "Dessert-adjacent",
-        "format": "6 × 500 ml"
-      }
+      ]
     },
     {
       "id": "p6",
@@ -346,12 +321,7 @@
       ],
       "collectionHandles": [
         "merch"
-      ],
-      "meta": {
-        "origin": "Stoneware",
-        "notes": "Matte glaze",
-        "format": "350 ml"
-      }
+      ]
     },
     {
       "id": "p7",
@@ -385,12 +355,7 @@
       ],
       "collectionHandles": [
         "merch"
-      ],
-      "meta": {
-        "origin": "Waxed canvas",
-        "notes": "Leather straps",
-        "format": "One size"
-      }
+      ]
     },
     {
       "id": "p8",
@@ -424,12 +389,7 @@
       ],
       "collectionHandles": [
         "gear"
-      ],
-      "meta": {
-        "origin": "48 mm steel burrs",
-        "notes": "40 click-stops",
-        "format": "Hand grinder"
-      }
+      ]
     },
     {
       "id": "p9",
@@ -468,12 +428,7 @@
       ],
       "collectionHandles": [
         "gear"
-      ],
-      "meta": {
-        "origin": "Borosilicate glass",
-        "notes": "Dripper + server",
-        "format": "V60-style"
-      }
+      ]
     },
     {
       "id": "p10",
@@ -507,12 +462,7 @@
       ],
       "collectionHandles": [
         "gear"
-      ],
-      "meta": {
-        "origin": "Stainless steel",
-        "notes": "Thermometer lid",
-        "format": "600 ml"
-      }
+      ]
     },
     {
       "id": "p11",
@@ -555,12 +505,7 @@
       ],
       "collectionHandles": [
         "capsules"
-      ],
-      "meta": {
-        "origin": "Aluminium",
-        "notes": "Nespresso-compatible",
-        "format": "30 capsules"
-      }
+      ]
     },
     {
       "id": "p12",
@@ -598,12 +543,7 @@
       ],
       "collectionHandles": [
         "gifts"
-      ],
-      "meta": {
-        "origin": "Boxed set",
-        "notes": "2 coffees + mug + dripper",
-        "format": "Gift box"
-      }
+      ]
     }
   ]
 }

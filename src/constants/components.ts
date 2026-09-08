@@ -4,19 +4,19 @@
  */
 
 export const SITE = {
-  name: 'NOCTA',
-  defaultTitle: 'NOCTA — coffee roasted in the dark',
+  name: 'Ember',
+  defaultTitle: 'Ember — coffee roasted past midnight',
   defaultDescription:
     'Demo storefront for astro-njx-roast: a dark-luxury coffee theme for Astro. Mock data out of the box, Shopify with two env vars.',
-  logoDark: '/logo/nocta-dark.svg', // dark mark — shown on the light (latte) theme
-  logoLight: '/logo/nocta-light.svg', // light mark — shown on the dark theme
+  logoDark: '/logo/ember-dark.svg', // dark mark — shown on the light (latte) theme
+  logoLight: '/logo/ember-light.svg', // light mark — shown on the dark theme
   repoUrl: 'https://github.com/njbSaab/astro-njx-roast',
   authorUrl: 'https://njxui.dev',
 } as const;
 
 export const ANNOUNCEMENT = {
   text: 'Free shipping over $50 · −10% on your first order with code',
-  promoCode: 'NOCTA10',
+  promoCode: 'EMBER10',
   copiedLabel: 'Copied ✓',
   linkLabel: 'Star the theme on GitHub',
   linkHref: SITE.repoUrl,
@@ -26,7 +26,7 @@ export const HEADER = {
   navLinks: [
     { label: 'Coffee', href: '/collections/coffee' },
     { label: 'Creamers', href: '/collections/creamers' },
-    { label: 'Devices', href: '/collections/gear' },
+    { label: 'Gear', href: '/collections/gear' },
     { label: 'Merch', href: '/collections/merch' },
   ],
   aria: {

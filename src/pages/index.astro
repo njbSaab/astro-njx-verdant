@@ -15,13 +15,10 @@ const shelves = await Promise.all(
   })),
 );
 
-// six category tiles, 3 columns with the middle column dropped (style-book)
-const tileOrder = ['coffee', 'creamers', 'gear', 'merch', 'capsules', 'gifts'];
+// staggered 2-1-2-1 order for the six category tiles
+const tileOrder = ['coffee', 'creamers', 'merch', 'gear', 'capsules', 'gifts'];
 const tiles = tileOrder.map((h) => byHandle[h]).filter(Boolean);
-const allProducts = await commerce.listProducts();
-const counts = Object.fromEntries(
-  tiles.map((c) => [c.handle, allProducts.filter((p) => p.collectionHandles.includes(c.handle)).length]),
-);
+const isCentered = (i: number) => i === 2 || i === 5; // rows: 2, 1, 2, 1
 
 const serviceIcons: Record<string, string> = {
   truck: 'M1 5h14v12H1z M15 9h4l3 3v5h-7z M6 19a1.6 1.6 0 1 0 0-.01 M18 19a1.6 1.6 0 1 0 0-.01',
@@ -32,39 +29,44 @@ const serviceIcons: Record<string, string> = {
 ---
 
 <Layout overlayHeader={true}>
-  <!-- Hero: hatch background + photo, centered heading; tiles overlap below -->
-  <section class="hatch-135 relative grid min-h-[80vh] place-items-center overflow-hidden px-5 pb-[220px] pt-[160px] text-center">
-    <img src={T.hero.image.src} alt={T.hero.image.alt} class="absolute inset-0 h-full w-full object-cover opacity-40" />
-    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-black/40"></div>
-    <div class="relative max-w-3xl text-white">
-      <h1 class="font-display text-[clamp(38px,6vw,72px)] font-bold uppercase leading-[1.05] tracking-[0.04em]">
-        {T.hero.title}
-      </h1>
-      <p class="mx-auto mt-5 max-w-[54ch] text-[15px] leading-relaxed text-white/75">{T.hero.text}</p>
+  <!-- Hero: centered heading over a full-bleed image; category tiles overlap below -->
+  <section class="relative">
+    <img src={T.hero.image.src} alt={T.hero.image.alt} class="h-[68vh] min-h-[460px] w-full object-cover" />
+    <div class="absolute inset-0 bg-black/55"></div>
+    <div class="absolute inset-0 flex items-center justify-center px-5 pb-24">
+      <div class="max-w-3xl text-center text-white">
+        <h1 class="font-display text-[clamp(38px,6vw,72px)] font-black uppercase leading-[1.02] tracking-tight">
+          {T.hero.title}
+        </h1>
+        <p class="mx-auto mt-5 max-w-[54ch] text-[16px] leading-relaxed text-white/85">{T.hero.text}</p>
+      </div>
     </div>
   </section>
 
-  <!-- Category tiles ×6: 3 columns, middle column dropped (style-book offset) -->
-  <section class="relative z-10 mx-auto -mt-[190px] max-w-6xl px-5">
-    <div class="grid grid-cols-1 gap-5 sm:grid-cols-3">
+  <!-- Category tiles ×6: staggered 2-1-2-1, pulled up over the hero -->
+  <section class="relative z-10 mx-auto -mt-24 max-w-6xl px-5">
+    <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
       {tiles.map((c, i) => (
         <a
           href={`/collections/${c.handle}`}
           class:list={[
-            'group relative block overflow-hidden border border-white/10 transition-colors duration-200 hover:border-white',
-            i % 3 === 1 && 'sm:mt-14',
+            'group relative block overflow-hidden rounded-xl',
+            isCentered(i) && 'sm:col-span-2 sm:mx-auto sm:w-[calc(50%-10px)]',
           ]}
         >
           <img
             src={T.categoryShelf.images[c.handle]}
             alt={c.title}
-            class="aspect-[4/3] w-full object-cover opacity-80 transition duration-500 group-hover:opacity-100"
-            loading={i < 3 ? 'eager' : 'lazy'}
+            class="aspect-[16/9] w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+            loading={i < 2 ? 'eager' : 'lazy'}
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-          <div class="absolute inset-x-0 bottom-0 flex items-baseline justify-between gap-3 p-5 text-white">
-            <h3 class="text-[17px] font-semibold uppercase tracking-[0.14em]">{c.title}</h3>
-            <span class="shrink-0 text-[12px] tracking-[0.12em] text-white/70">{counts[c.handle]} items</span>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/10"></div>
+          <div class="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-5 text-white">
+            <div>
+              <h3 class="font-display text-[19px] font-extrabold uppercase tracking-wide">{c.title}</h3>
+              <p class="mt-1 max-w-[40ch] text-[13px] text-white/75">{c.description}</p>
+            </div>
+            <span class="mb-1 shrink-0 text-[18px] text-white/70 transition group-hover:translate-x-1 group-hover:text-brand">›</span>
           </div>
         </a>
       ))}
@@ -72,27 +74,26 @@ const serviceIcons: Record<string, string> = {
   </section>
 
   <!-- Product shelves: one slider per featured collection -->
-  {shelves.map((shelf, si) => (
-    <section class:list={['mx-auto max-w-6xl px-5', si === 0 ? 'pt-[120px]' : 'pt-20']} data-shelf>
-      <div class="mb-7 flex items-end justify-between">
-        <div>
-          <p class="mb-2 text-[12px] uppercase tracking-[0.24em] text-white/55">{shelf.eyebrow}</p>
-          <h2 class="font-display text-[clamp(26px,3vw,36px)] font-semibold uppercase leading-none tracking-[0.08em]">{shelf.title}</h2>
+  {shelves.map((shelf) => (
+    <section class="mx-auto max-w-6xl px-5 pt-14">
+      <h2 class="font-display text-[26px] font-extrabold uppercase tracking-wide">{shelf.title}</h2>
+      <div class="relative mt-6" data-shelf>
+        <div class="flex snap-x snap-mandatory gap-5 overflow-x-auto pb-2 [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" data-shelf-track>
+          {shelf.products.map((p) => (
+            <div class="w-[260px] shrink-0 snap-start sm:w-[300px]">
+              <ProductCard product={p} category={byHandle[shelf.collection]?.title} />
+            </div>
+          ))}
         </div>
-        <div class="hidden gap-1.5 md:flex">
-          <button data-shelf-prev class="grid h-11 w-11 place-items-center border border-white/30 text-[18px] text-white transition hover:border-white" aria-label="Scroll back">←</button>
-          <button data-shelf-next class="grid h-11 w-11 place-items-center border border-white/30 text-[18px] text-white transition hover:border-white" aria-label="Scroll forward">→</button>
-        </div>
+        <button data-shelf-prev class="absolute -left-3 top-1/2 hidden -translate-y-1/2 rounded-full border border-line bg-paper p-2.5 text-ink shadow-lg transition hover:border-brand hover:text-brand md:block" aria-label="Scroll back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button data-shelf-next class="absolute -right-3 top-1/2 hidden -translate-y-1/2 rounded-full border border-line bg-paper p-2.5 text-ink shadow-lg transition hover:border-brand hover:text-brand md:block" aria-label="Scroll forward">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
       </div>
-      <div class="flex snap-x snap-mandatory gap-5 overflow-x-auto pb-1 [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" data-shelf-track>
-        {shelf.products.map((p) => (
-          <div class="w-[260px] shrink-0 snap-start sm:w-[calc((100%-40px)/3)] sm:min-w-[260px]">
-            <ProductCard product={p} category={byHandle[shelf.collection]?.title} />
-          </div>
-        ))}
-      </div>
-      <div class="mt-7 text-center">
-        <a href={`/collections/${shelf.collection}`} class="inline-block border border-white/30 px-8 py-3 text-[12px] font-semibold uppercase tracking-[0.18em] transition hover:border-white">
+      <div class="mt-6 text-center">
+        <a href={`/collections/${shelf.collection}`} class="inline-block rounded-md border border-line px-7 py-3 text-[14px] font-semibold transition hover:border-brand hover:text-brand">
           {shelf.allLabel}
         </a>
       </div>
@@ -100,32 +101,34 @@ const serviceIcons: Record<string, string> = {
   ))}
 
   <!-- Services: fixed white band, icon larger than the title, vertical separators -->
-  <section class="mt-16 bg-white text-[#0a0a0a]">
-    <div class="mx-auto grid max-w-6xl grid-cols-1 gap-y-8 px-5 py-10 sm:grid-cols-2 sm:py-12 lg:grid-cols-4 lg:divide-x lg:divide-[#e5e5e5]">
+  <section class="mt-16 bg-white text-[#120d0a]">
+    <div class="mx-auto grid max-w-6xl grid-cols-1 gap-y-8 px-5 py-10 sm:grid-cols-2 sm:py-12 lg:grid-cols-4 lg:divide-x lg:divide-[#e5ddd0]">
       {T.services.map((s) => (
         <div class="lg:px-7 lg:first:pl-0 lg:last:pr-0">
           <div class="flex items-center gap-3">
-            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-[#0a0a0a]">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-brand">
               {serviceIcons[s.icon].split(' M').map((d, i) => <path d={i === 0 ? d : 'M' + d} />)}
             </svg>
             <h3 class="text-[15px] font-extrabold uppercase tracking-wide">{s.title}</h3>
           </div>
-          <p class="mt-3 text-[14px] leading-relaxed text-[#555]">{s.text}</p>
+          <p class="mt-3 text-[14px] leading-relaxed text-[#5c534a]">{s.text}</p>
         </div>
       ))}
     </div>
   </section>
 
-  <!-- Editorial banner: hatch background, white text LEFT, outline CTA — the theme colophon -->
-  <section class="hatch-45 relative mt-20 overflow-hidden">
-    <div class="relative mx-auto max-w-6xl px-5 py-24 md:py-32">
+  <!-- Editorial banner: background photo, white text LEFT, outline CTA — the theme colophon -->
+  <section class="relative mt-16 overflow-hidden">
+    <img src={T.colophon.image.src} alt={T.colophon.image.alt} class="absolute inset-0 h-full w-full object-cover" />
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative mx-auto max-w-6xl px-5 py-20 md:py-28">
       <div class="max-w-xl text-white">
-        <p class="text-[12px] uppercase tracking-[0.24em] text-white/55">{T.colophon.eyebrow}</p>
-        <h2 class="mt-4 font-display text-[clamp(26px,3.5vw,40px)] font-semibold uppercase leading-tight tracking-[0.06em]">
+        <p class="text-[13px] font-medium text-white/70">{T.colophon.eyebrow}</p>
+        <h2 class="mt-3 font-display text-[clamp(26px,3.5vw,40px)] font-black uppercase leading-tight tracking-tight">
           {T.colophon.title}
         </h2>
-        <p class="mt-4 text-[15px] leading-relaxed text-white/75">{T.colophon.text}</p>
-        <a href={T.colophon.cta.href} class="mt-8 inline-block border border-white px-8 py-3.5 text-[12px] font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-[#0a0a0a]">
+        <p class="mt-4 text-[15px] leading-relaxed text-white/85">{T.colophon.text}</p>
+        <a href={T.colophon.cta.href} class="mt-7 inline-block rounded-md border-2 border-white px-7 py-3 text-[14px] font-bold uppercase tracking-wide text-white transition hover:bg-white hover:text-[#120d0a]">
           {T.colophon.cta.label}
         </a>
       </div>
