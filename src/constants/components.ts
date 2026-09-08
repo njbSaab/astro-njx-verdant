@@ -4,33 +4,34 @@
  */
 
 export const SITE = {
-  name: 'Maren',
-  defaultTitle: 'Maren — clothes for slow seasons',
+  name: 'Ember',
+  defaultTitle: 'Ember — coffee roasted past midnight',
   defaultDescription:
-    'Demo storefront for astro-njx-boutique: an editorial fashion theme for Astro. Mock data out of the box, Shopify with two env vars.',
-  logoDark: '/logo/maren-dark.svg', // dark mark — shown on the light theme
-  logoLight: '/logo/maren-light.svg', // light mark — shown on the dark theme
-  repoUrl: 'https://github.com/njbSaab/astro-njx-boutique',
+    'Demo storefront for astro-njx-roast: a dark-luxury coffee theme for Astro. Mock data out of the box, Shopify with two env vars.',
+  logoDark: '/logo/ember-dark.svg', // dark mark — shown on the light (latte) theme
+  logoLight: '/logo/ember-light.svg', // light mark — shown on the dark theme
+  repoUrl: 'https://github.com/njbSaab/astro-njx-roast',
   authorUrl: 'https://njxui.dev',
 } as const;
 
 export const ANNOUNCEMENT = {
-  text: 'Complimentary shipping over $150 — every piece cut and sewn in-house',
+  text: 'Free shipping over $50 · −10% on your first order with code',
+  promoCode: 'EMBER10',
+  copiedLabel: 'Copied ✓',
   linkLabel: 'Star the theme on GitHub',
   linkHref: SITE.repoUrl,
 } as const;
 
 export const HEADER = {
   navLinks: [
-    { label: 'Dresses', href: '/collections/dresses' },
-    { label: 'Knitwear', href: '/collections/knitwear' },
-    { label: 'Outerwear', href: '/collections/outerwear' },
-    { label: 'Accessories', href: '/collections/accessories' },
+    { label: 'Coffee', href: '/collections/coffee' },
+    { label: 'Creamers', href: '/collections/creamers' },
+    { label: 'Gear', href: '/collections/gear' },
+    { label: 'Merch', href: '/collections/merch' },
   ],
   aria: {
     search: 'Search',
     account: 'Account',
-    favorites: 'Favorites',
     theme: 'Toggle theme',
     cart: 'Open cart',
     menu: 'Open menu',
@@ -38,26 +39,28 @@ export const HEADER = {
 } as const;
 
 export const SEARCH = {
-  placeholder: 'Search the collection…',
+  placeholder: 'Search the roastery…',
   escHint: 'Esc',
-  emptyText: 'Nothing found — try “wool”, “silk” or “linen”.',
+  emptyText: 'Nothing found — try “espresso”, “grinder” or “gift”.',
 } as const;
 
 export const FOOTER = {
   tagline:
-    'Clothes for slow seasons. A demo store for the astro-njx-boutique theme — every garment here is fictional, the checkout is real.',
+    'Coffee roasted past midnight. A demo store for the astro-njx-roast theme — every product here is fictional, the checkout is real.',
   columns: [
     {
       title: 'Shop',
       links: [
-        { label: 'Dresses & skirts', href: '/collections/dresses' },
-        { label: 'Knitwear', href: '/collections/knitwear' },
-        { label: 'Outerwear', href: '/collections/outerwear' },
-        { label: 'Accessories', href: '/collections/accessories' },
+        { label: 'Premium coffee', href: '/collections/coffee' },
+        { label: 'Creamers', href: '/collections/creamers' },
+        { label: 'Brew gear', href: '/collections/gear' },
+        { label: 'Merch & objects', href: '/collections/merch' },
+        { label: 'Capsules', href: '/collections/capsules' },
+        { label: 'Gift sets', href: '/collections/gifts' },
       ],
     },
     {
-      title: 'Maison',
+      title: 'Roastery',
       links: [
         { label: 'About', href: '/about' },
         { label: 'Contacts', href: '/contacts' },
@@ -80,8 +83,8 @@ export const FOOTER = {
 } as const;
 
 export const THANKS_MODAL = {
-  emoji: '🌸',
-  title: 'Merci — order received!',
+  emoji: '☕️',
+  title: 'Thanks — the kettle is on!',
   text: 'This is a demo store, so nothing was charged. If the theme feels right, a star on GitHub takes two seconds and helps a lot.',
   starLabel: '⭐️ Star on GitHub',
   starHref: SITE.repoUrl,
@@ -91,17 +94,20 @@ export const THANKS_MODAL = {
 } as const;
 
 export const CART = {
-  ariaDrawer: 'Shopping bag',
+  ariaDrawer: 'Shopping cart',
   clearLabel: 'Clear all',
-  ariaClear: 'Clear bag',
-  ariaClose: 'Close bag',
-  emptyLine1: 'Your bag is empty.',
-  emptyLine2: 'Shipping is on us over $150.',
+  ariaClear: 'Clear cart',
+  ariaClose: 'Close cart',
+  emptyLine1: 'Your cart is empty.',
+  emptyLine2: 'Shipping is on us over $50.',
   subtotalLabel: 'Subtotal',
   shippingNote: 'Shipping and taxes calculated at checkout.',
   checkoutLabel: 'Checkout',
   checkoutPreparing: 'Preparing checkout…',
   checkoutFailedPrefix: 'Checkout failed: ',
+  savedTitle: 'Saved for later',
+  savedMove: 'Move to cart',
+  savedRemoveAria: (title: string) => `Remove ${title} from saved`,
 } as const;
 
 export const NAV_DRAWER = {
@@ -109,10 +115,12 @@ export const NAV_DRAWER = {
   ariaClose: 'Close menu',
   home: { label: 'Home', href: '/' },
   collections: [
-    { label: 'Dresses & skirts', href: '/collections/dresses' },
-    { label: 'Knitwear', href: '/collections/knitwear' },
-    { label: 'Outerwear', href: '/collections/outerwear' },
-    { label: 'Accessories', href: '/collections/accessories' },
+    { label: 'Premium coffee', href: '/collections/coffee' },
+    { label: 'Creamers', href: '/collections/creamers' },
+    { label: 'Brew gear', href: '/collections/gear' },
+    { label: 'Merch & objects', href: '/collections/merch' },
+    { label: 'Capsules', href: '/collections/capsules' },
+    { label: 'Gift sets', href: '/collections/gifts' },
   ],
   pages: [
     { label: 'About', href: '/about' },
@@ -130,7 +138,8 @@ export const NAV_DRAWER = {
 
 export const PRODUCT_CARD = {
   saleBadge: 'Sale',
-  addToCart: 'Add to bag',
-  ariaFav: (title: string) => `Add ${title} to favorites`,
-  ariaAdd: (title: string) => `Add ${title} to bag`,
+  addToCart: 'Add to cart',
+  goLabel: 'View ›',
+  ariaFav: (title: string) => `Save ${title} for later`,
+  ariaAdd: (title: string) => `Add ${title} to cart`,
 } as const;

@@ -5,7 +5,7 @@
 import { persistentAtom } from '@nanostores/persistent';
 import type { CartLine } from './commerce/types';
 
-export const cartLines = persistentAtom<CartLine[]>('njx-boutique-cart', [], {
+export const cartLines = persistentAtom<CartLine[]>('njx-roast-cart', [], {
   encode: JSON.stringify,
   decode: JSON.parse,
 });

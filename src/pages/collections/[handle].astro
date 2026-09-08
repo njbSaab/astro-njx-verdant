@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import { commerce } from '../../lib/commerce';
-import { COLLECTION as T } from '../../constants/pages';
+import { COLLECTION as T, HOME } from '../../constants/pages';
 
 export async function getStaticPaths() {
   const collections = await commerce.listCollections();
@@ -13,17 +13,29 @@ const { collection } = Astro.props;
 const products = await commerce.listProducts({ collection: collection.handle });
 const all = await commerce.listCollections();
 
+// Banner: the collection's tile image (first product photo works as fallback)
+const bannerSrc = HOME.categoryShelf.images[collection.handle] ?? products[0]?.images[0]?.src;
+
 // This collection's tags — used by the client-side filter (with piece counts)
 const tags = [...new Set(products.flatMap((p) => p.tags))].sort();
 const tagCount = (t: string) => products.filter((p) => p.tags.includes(t)).length;
 ---
 
-<Layout title={`${collection.title}${T.metaSuffix}`} description={collection.description}>
-  <section class="mx-auto max-w-6xl px-5 pt-5 md:pt-6">
-    <h1 class="font-display text-[clamp(32px,5vw,52px)] font-medium tracking-tight">{collection.title}</h1>
-    <p class="mt-3 max-w-[52ch] text-[16px] leading-relaxed text-muted">{collection.description}</p>
+<Layout title={`${collection.title}${T.metaSuffix}`} description={collection.description} overlayHeader={true}>
+  <!-- Collection banner: same treatment as the home hero -->
+  <section class="relative">
+    <img src={bannerSrc} alt={collection.title} class="h-[42vh] min-h-[300px] w-full object-cover" />
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="absolute inset-0 flex items-center justify-center px-5">
+      <div class="max-w-2xl text-center text-white">
+        <h1 class="font-display text-[clamp(32px,5vw,56px)] font-black uppercase leading-tight tracking-tight">{collection.title}</h1>
+        <p class="mx-auto mt-3 max-w-[52ch] text-[15px] leading-relaxed text-white/85">{collection.description}</p>
+      </div>
+    </div>
+  </section>
 
-    <div class="mt-7 flex flex-wrap gap-2 pb-6">
+  <section class="mx-auto max-w-6xl px-5 pt-8">
+    <div class="flex flex-wrap gap-2 pb-6">
       {all.filter((c) => c.handle !== 'frontpage').map((c) => (
         <a
           href={`/collections/${c.handle}`}
@@ -79,7 +91,7 @@ const tagCount = (t: string) => products.filter((p) => p.tags.includes(t)).lengt
         <div class="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-4" data-grid>
           {products.map((p, i) => (
             <div data-card data-tags={p.tags.join(',')} data-price={p.price.amount} data-title={p.title} data-index={i}>
-              <ProductCard product={p} />
+              <ProductCard product={p} category={collection.title} />
             </div>
           ))}
         </div>

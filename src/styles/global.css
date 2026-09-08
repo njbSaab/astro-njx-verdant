@@ -78,6 +78,61 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ── Header states ──
+   .is-solid: normal pages — paper bg + hairline.
+   .header-overlay: home — transparent over the hero (pulled up via negative
+   margin), turns into blurred glass once the page scrolls (.is-scrolled). */
+#site-header.is-solid {
+  background: color-mix(in srgb, var(--color-paper) 95%, transparent);
+  border-bottom: 1px solid var(--color-line);
+  backdrop-filter: blur(10px);
+}
+#site-header.header-overlay {
+  margin-bottom: -4rem; /* hero slides underneath */
+  color: #fff;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+}
+#site-header.header-overlay.is-scrolled {
+  color: var(--color-ink);
+  background: color-mix(in srgb, var(--color-paper) 82%, transparent);
+  border-bottom-color: var(--color-line);
+  backdrop-filter: blur(14px);
+}
+
+/* ── Quick view: near-black blurred overlay; the header stays visible and
+   adopts the same dark glass while the popup is open ── */
+.qv-backdrop {
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(5px);
+}
+body.qv-open {
+  overflow: hidden;
+}
+body.qv-open #site-header {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.92);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(5px);
+}
+
+/* ── Footer: always espresso-dark regardless of theme (local token remap) ── */
+.site-footer {
+  --color-paper: #0d0906;
+  --color-tile: #17110c;
+  --color-ink: #f4ede4;
+  --color-muted: #a3937f;
+  --color-line: #2b211a;
+  background: #0d0906;
+  color: #f4ede4;
+}
+.site-footer .tech-row img {
+  filter: grayscale(1) invert(1) contrast(0.8);
+}
+.site-footer .tech-row img:hover {
+  filter: grayscale(1) invert(1) contrast(1);
+}
+
 /* Tailwind v4 preflight makes buttons cursor:default — restore pointer
    on everything interactive (disabled stays default). */
 button:not(:disabled),
