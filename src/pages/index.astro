@@ -16,7 +16,7 @@ const shelves = await Promise.all(
 );
 
 // staggered 2-1-2-1 order for the six category tiles
-const tileOrder = ['coffee', 'creamers', 'merch', 'gear', 'capsules', 'gifts'];
+const tileOrder = ['skincare', 'body', 'sets', 'hair', 'candles', 'tools'];
 const tiles = tileOrder.map((h) => byHandle[h]).filter(Boolean);
 const isCentered = (i: number) => i === 2 || i === 5; // rows: 2, 1, 2, 1
 

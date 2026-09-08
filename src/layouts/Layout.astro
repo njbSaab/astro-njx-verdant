@@ -58,7 +58,7 @@ const searchIndex = JSON.stringify(
     />
     <script is:inline>
       // restore theme before first paint (no flash)
-      if (localStorage.getItem('njx-roast-theme') === 'dark') {
+      if (localStorage.getItem('njx-verdant-theme') === 'dark') {
         document.documentElement.classList.add('dark');
       }
     </script>
@@ -412,7 +412,7 @@ const searchIndex = JSON.stringify(
       themeToggles.forEach((btn) =>
         btn.addEventListener('click', () => {
           const dark = document.documentElement.classList.toggle('dark');
-          localStorage.setItem('njx-roast-theme', dark ? 'dark' : 'light');
+          localStorage.setItem('njx-verdant-theme', dark ? 'dark' : 'light');
           syncThemeIcon();
         })
       );

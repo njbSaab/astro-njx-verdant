@@ -2,312 +2,282 @@
   "collections": [
     {
       "id": "c1",
-      "handle": "coffee",
-      "title": "Premium Coffee",
-      "description": "Small-batch beans, roasted this week and sealed at peak aroma."
+      "handle": "skincare",
+      "title": "Skincare",
+      "description": "Cleansers, serums and masks built on plants that actually work."
     },
     {
       "id": "c2",
-      "handle": "creamers",
-      "title": "Premium Creamers",
-      "description": "Barista-grade creamers that steam, foam and never split."
+      "handle": "body",
+      "title": "Body",
+      "description": "Oils, balms and soaks for the body that carries you around."
     },
     {
       "id": "c3",
-      "handle": "merch",
-      "title": "Merch & Objects",
-      "description": "Stoneware, waxed canvas and objects that live next to the machine."
+      "handle": "hair",
+      "title": "Hair",
+      "description": "Scalp-first care — everything else follows."
     },
     {
       "id": "c4",
-      "handle": "gear",
-      "title": "Brew Gear",
-      "description": "Grinders, kettles and kits — the hardware behind a serious cup."
+      "handle": "candles",
+      "title": "Candles & Home",
+      "description": "Coconut-soy candles that smell like the greenhouse, not the mall."
     },
     {
       "id": "c5",
-      "handle": "capsules",
-      "title": "Capsules",
-      "description": "Our roast profiles, sealed in recyclable aluminium."
+      "handle": "tools",
+      "title": "Tools",
+      "description": "Jade, bristle and beech — the analog side of the ritual."
     },
     {
       "id": "c6",
-      "handle": "gifts",
-      "title": "Gift Sets",
+      "handle": "sets",
+      "title": "Ritual Sets",
       "description": "Boxed combinations that make you look like you tried very hard."
     }
   ],
   "products": [
     {
       "id": "p1",
-      "handle": "midnight-espresso",
-      "title": "Midnight Espresso",
-      "description": "A blood-dark blend of Brazilian and Ethiopian beans, roasted past the second crack for a crema that holds a spoon. Chocolate, black cherry, no apologies.",
+      "handle": "gentle-cleansing-oil",
+      "title": "Gentle Cleansing Oil",
+      "description": "Camellia and jojoba oils that melt sunscreen and city off your skin, then rinse to nothing. No stripped feeling, no film — just clean.",
       "images": [
         {
-          "src": "/products/midnight-espresso.jpg",
-          "alt": "Midnight Espresso"
+          "src": "/products/gentle-cleansing-oil.jpg",
+          "alt": "Gentle Cleansing Oil"
         }
       ],
       "price": {
-        "amount": 18,
+        "amount": 28,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p1v1",
-          "title": "250 g",
+          "title": "100 ml",
           "price": {
-            "amount": 18,
+            "amount": 28,
             "currency": "USD"
           },
           "available": true
         },
         {
           "id": "p1v2",
-          "title": "500 g",
+          "title": "200 ml",
           "price": {
-            "amount": 18,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p1v3",
-          "title": "1 kg",
-          "price": {
-            "amount": 18,
+            "amount": 28,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "espresso",
-        "dark-roast"
+        "oil",
+        "cleanser"
       ],
       "collectionHandles": [
-        "coffee"
-      ]
+        "skincare"
+      ],
+      "meta": {
+        "origin": "Camellia · jojoba",
+        "notes": "All skin types",
+        "format": "100 ml"
+      }
     },
     {
       "id": "p2",
-      "handle": "velvet-lungo",
-      "title": "Velvet Lungo",
-      "description": "A long, silky cup built on washed Colombian lots. Caramel sweetness up front, toasted hazelnut underneath — the everyday luxury cup.",
+      "handle": "botanical-face-serum",
+      "title": "Botanical Face Serum",
+      "description": "Green tea, niacinamide and squalane in a weightless serum. Calms redness in a week, evens tone in a month. The quiet workhorse of the shelf.",
       "images": [
         {
-          "src": "/products/velvet-lungo.jpg",
-          "alt": "Velvet Lungo"
+          "src": "/products/botanical-face-serum.jpg",
+          "alt": "Botanical Face Serum"
         }
       ],
       "price": {
-        "amount": 16,
+        "amount": 42,
         "currency": "USD"
       },
       "compareAtPrice": {
-        "amount": 20,
+        "amount": 52,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p2v1",
-          "title": "250 g",
+          "title": "30 ml",
           "price": {
-            "amount": 16,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p2v2",
-          "title": "500 g",
-          "price": {
-            "amount": 16,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p2v3",
-          "title": "1 kg",
-          "price": {
-            "amount": 16,
+            "amount": 42,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "lungo",
-        "medium-roast",
+        "serum",
         "sale"
       ],
       "collectionHandles": [
-        "coffee"
-      ]
+        "skincare"
+      ],
+      "meta": {
+        "origin": "Green tea · niacinamide",
+        "notes": "Sensitive, combination",
+        "format": "30 ml"
+      }
     },
     {
       "id": "p3",
-      "handle": "single-origin-yirgacheffe",
-      "title": "Yirgacheffe Single Origin",
-      "description": "One farm, one harvest, one roast profile. Bergamot and apricot brightness that makes filter coffee feel like an occasion.",
+      "handle": "clay-renewal-mask",
+      "title": "Clay Renewal Mask",
+      "description": "French green clay and chamomile — ten minutes, once a week. Pores behave, skin stays soft, nothing gets angry.",
       "images": [
         {
-          "src": "/products/single-origin-yirgacheffe.jpg",
-          "alt": "Yirgacheffe Single Origin"
+          "src": "/products/clay-renewal-mask.jpg",
+          "alt": "Clay Renewal Mask"
         }
       ],
       "price": {
-        "amount": 22,
+        "amount": 26,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p3v1",
-          "title": "250 g",
+          "title": "75 ml",
           "price": {
-            "amount": 22,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p3v2",
-          "title": "500 g",
-          "price": {
-            "amount": 22,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p3v3",
-          "title": "1 kg",
-          "price": {
-            "amount": 22,
+            "amount": 26,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "single-origin",
-        "light-roast"
+        "mask",
+        "clay"
       ],
       "collectionHandles": [
-        "coffee"
-      ]
+        "skincare"
+      ],
+      "meta": {
+        "origin": "Green clay · chamomile",
+        "notes": "Oily, congested",
+        "format": "75 ml"
+      }
     },
     {
       "id": "p4",
-      "handle": "oat-cloud-creamer",
-      "title": "Oat Cloud Creamer",
-      "description": "Barista-grade oat creamer that steams into a dense microfoam and never splits in hot coffee. Quietly sweet, nothing artificial.",
+      "handle": "verdant-body-oil",
+      "title": "Verdant Body Oil",
+      "description": "Sweet almond and sage, pressed slow. Sinks in before you finish your coffee; smells like a greenhouse after rain.",
       "images": [
         {
-          "src": "/products/oat-cloud-creamer.jpg",
-          "alt": "Oat Cloud Creamer"
+          "src": "/products/verdant-body-oil.jpg",
+          "alt": "Verdant Body Oil"
         }
       ],
       "price": {
-        "amount": 9,
+        "amount": 34,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p4v1",
-          "title": "6-pack",
+          "title": "100 ml",
           "price": {
-            "amount": 9,
+            "amount": 34,
             "currency": "USD"
           },
           "available": true
         },
         {
           "id": "p4v2",
-          "title": "12-pack",
+          "title": "250 ml",
           "price": {
-            "amount": 9,
+            "amount": 34,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "oat",
-        "barista"
+        "oil",
+        "sage"
       ],
       "collectionHandles": [
-        "creamers"
-      ]
+        "body"
+      ],
+      "meta": {
+        "origin": "Almond · sage",
+        "notes": "Dry skin, post-shower",
+        "format": "100 ml"
+      }
     },
     {
       "id": "p5",
-      "handle": "vanilla-bean-creamer",
-      "title": "Vanilla Bean Creamer",
-      "description": "Real Madagascar vanilla folded into double cream. A dessert disguised as a splash.",
+      "handle": "sage-soap-bar",
+      "title": "Sage & Oat Soap Bar",
+      "description": "Cold-process bar with sage leaf and ground oats. Cuts nothing corners, strips nothing away — just clean.",
       "images": [
         {
-          "src": "/products/vanilla-bean-creamer.jpg",
-          "alt": "Vanilla Bean Creamer"
+          "src": "/products/sage-soap-bar.jpg",
+          "alt": "Sage & Oat Soap Bar"
         }
       ],
       "price": {
-        "amount": 11,
-        "currency": "USD"
-      },
-      "compareAtPrice": {
         "amount": 14,
         "currency": "USD"
       },
       "variants": [
         {
           "id": "p5v1",
-          "title": "6-pack",
+          "title": "110 g",
           "price": {
-            "amount": 11,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p5v2",
-          "title": "12-pack",
-          "price": {
-            "amount": 11,
+            "amount": 14,
             "currency": "USD"
           },
           "available": true
         }
       ],
       "tags": [
-        "vanilla",
-        "sale"
+        "soap",
+        "gift"
       ],
       "collectionHandles": [
-        "creamers"
-      ]
+        "body"
+      ],
+      "meta": {
+        "origin": "Sage · oat · olive oil",
+        "notes": "Daily, all skin",
+        "format": "110 g bar"
+      }
     },
     {
       "id": "p6",
-      "handle": "roast-mug",
-      "title": "The Roast Mug",
-      "description": "Stoneware, 350 ml, matte espresso glaze with a raw clay base. Keeps heat like it means it.",
+      "handle": "herbal-bath-soak",
+      "title": "Herbal Bath Soak",
+      "description": "Dead-sea salt, nettle and rosemary. Twenty minutes in this and the week loses its grip.",
       "images": [
         {
-          "src": "/products/roast-mug.jpg",
-          "alt": "The Roast Mug"
+          "src": "/products/herbal-bath-soak.jpg",
+          "alt": "Herbal Bath Soak"
         }
       ],
       "price": {
         "amount": 24,
         "currency": "USD"
       },
+      "compareAtPrice": {
+        "amount": 30,
+        "currency": "USD"
+      },
       "variants": [
         {
           "id": "p6v1",
-          "title": "Default",
+          "title": "400 g",
           "price": {
             "amount": 24,
             "currency": "USD"
@@ -316,22 +286,303 @@
         }
       ],
       "tags": [
-        "stoneware",
-        "gift"
+        "bath",
+        "sale"
       ],
       "collectionHandles": [
-        "merch"
-      ]
+        "body"
+      ],
+      "meta": {
+        "origin": "Sea salt · nettle · rosemary",
+        "notes": "Evenings, sore muscles",
+        "format": "400 g"
+      }
     },
     {
       "id": "p7",
-      "handle": "barista-apron",
-      "title": "Barista Apron",
-      "description": "Waxed canvas with leather straps, three pockets sized for a tamper, a cloth and a phone. Ages like a workshop bench.",
+      "handle": "rosemary-scalp-oil",
+      "title": "Rosemary Scalp Oil",
+      "description": "Rosemary and peppermint pre-wash treatment. Ten minutes before shampoo; your scalp does the rest.",
       "images": [
         {
-          "src": "/products/barista-apron.jpg",
-          "alt": "Barista Apron"
+          "src": "/products/rosemary-scalp-oil.jpg",
+          "alt": "Rosemary Scalp Oil"
+        }
+      ],
+      "price": {
+        "amount": 29,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p7v1",
+          "title": "60 ml",
+          "price": {
+            "amount": 29,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "oil",
+        "rosemary"
+      ],
+      "collectionHandles": [
+        "hair"
+      ],
+      "meta": {
+        "origin": "Rosemary · peppermint",
+        "notes": "Thinning, dry scalp",
+        "format": "60 ml"
+      }
+    },
+    {
+      "id": "p8",
+      "handle": "silk-hair-mist",
+      "title": "Silk Hair Mist",
+      "description": "Rice protein and a whisper of fig leaf. Detangles, softens, and quiets frizz without weight.",
+      "images": [
+        {
+          "src": "/products/silk-hair-mist.jpg",
+          "alt": "Silk Hair Mist"
+        }
+      ],
+      "price": {
+        "amount": 22,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p8v1",
+          "title": "120 ml",
+          "price": {
+            "amount": 22,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "mist"
+      ],
+      "collectionHandles": [
+        "hair"
+      ],
+      "meta": {
+        "origin": "Rice protein · fig leaf",
+        "notes": "All hair types",
+        "format": "120 ml"
+      }
+    },
+    {
+      "id": "p9",
+      "handle": "fig-leaf-candle",
+      "title": "Fig Leaf Candle",
+      "description": "Coconut-soy wax, cotton wick, fig leaf and cut grass. Burns fifty hours; the room stays green long after.",
+      "images": [
+        {
+          "src": "/products/fig-leaf-candle.jpg",
+          "alt": "Fig Leaf Candle"
+        }
+      ],
+      "price": {
+        "amount": 36,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p9v1",
+          "title": "220 g",
+          "price": {
+            "amount": 36,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "candle",
+        "fig"
+      ],
+      "collectionHandles": [
+        "candles"
+      ],
+      "meta": {
+        "origin": "Coconut-soy wax",
+        "notes": "50 h burn",
+        "format": "220 g"
+      }
+    },
+    {
+      "id": "p10",
+      "handle": "moss-amber-candle",
+      "title": "Moss & Amber Candle",
+      "description": "Deep moss, warm amber, a library at dusk. The candle for the last hour of the evening.",
+      "images": [
+        {
+          "src": "/products/moss-amber-candle.jpg",
+          "alt": "Moss & Amber Candle"
+        }
+      ],
+      "price": {
+        "amount": 36,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p10v1",
+          "title": "220 g",
+          "price": {
+            "amount": 36,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "candle",
+        "amber"
+      ],
+      "collectionHandles": [
+        "candles"
+      ],
+      "meta": {
+        "origin": "Coconut-soy wax",
+        "notes": "50 h burn",
+        "format": "220 g"
+      }
+    },
+    {
+      "id": "p11",
+      "handle": "jade-gua-sha",
+      "title": "Jade Gua Sha",
+      "description": "Hand-polished jade, cool against the morning. Five minutes along the jaw and the day starts calmer.",
+      "images": [
+        {
+          "src": "/products/jade-gua-sha.jpg",
+          "alt": "Jade Gua Sha"
+        }
+      ],
+      "price": {
+        "amount": 21,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p11v1",
+          "title": "Default",
+          "price": {
+            "amount": 21,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "jade",
+        "ritual"
+      ],
+      "collectionHandles": [
+        "tools"
+      ],
+      "meta": {
+        "origin": "Xiuyan jade",
+        "notes": "Face, morning ritual",
+        "format": "One piece"
+      }
+    },
+    {
+      "id": "p12",
+      "handle": "facial-dry-brush",
+      "title": "Facial Dry Brush",
+      "description": "Goat bristle, beech handle. Sixty seconds before cleansing — circulation up, dullness down.",
+      "images": [
+        {
+          "src": "/products/facial-dry-brush.jpg",
+          "alt": "Facial Dry Brush"
+        }
+      ],
+      "price": {
+        "amount": 27,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p12v1",
+          "title": "Default",
+          "price": {
+            "amount": 27,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "brush"
+      ],
+      "collectionHandles": [
+        "tools"
+      ],
+      "meta": {
+        "origin": "Goat bristle · beech",
+        "notes": "Before cleansing",
+        "format": "One piece"
+      }
+    },
+    {
+      "id": "p13",
+      "handle": "evening-ritual-set",
+      "title": "Evening Ritual Set",
+      "description": "Cleansing oil, clay mask and the moss candle, boxed in forest green. The whole wind-down in one lid.",
+      "images": [
+        {
+          "src": "/products/evening-ritual-set.jpg",
+          "alt": "Evening Ritual Set"
+        }
+      ],
+      "price": {
+        "amount": 64,
+        "currency": "USD"
+      },
+      "compareAtPrice": {
+        "amount": 78,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p13v1",
+          "title": "Default",
+          "price": {
+            "amount": 64,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "set",
+        "gift",
+        "sale"
+      ],
+      "collectionHandles": [
+        "sets"
+      ],
+      "meta": {
+        "origin": "Boxed set",
+        "notes": "Oil + mask + candle",
+        "format": "Gift box"
+      }
+    },
+    {
+      "id": "p14",
+      "handle": "verdant-starter-set",
+      "title": "Verdant Starter Set",
+      "description": "Travel sizes of the serum, body oil and soap bar. The safest excellent gift in skincare.",
+      "images": [
+        {
+          "src": "/products/verdant-starter-set.jpg",
+          "alt": "Verdant Starter Set"
         }
       ],
       "price": {
@@ -340,7 +591,7 @@
       },
       "variants": [
         {
-          "id": "p7v1",
+          "id": "p14v1",
           "title": "Default",
           "price": {
             "amount": 48,
@@ -350,200 +601,17 @@
         }
       ],
       "tags": [
-        "canvas",
+        "set",
         "gift"
       ],
       "collectionHandles": [
-        "merch"
-      ]
-    },
-    {
-      "id": "p8",
-      "handle": "precision-grinder",
-      "title": "Precision Hand Grinder",
-      "description": "48 mm steel burrs, 40 click-stops from Turkish to French press. The upgrade that changes every cup after it.",
-      "images": [
-        {
-          "src": "/products/precision-grinder.jpg",
-          "alt": "Precision Hand Grinder"
-        }
+        "sets"
       ],
-      "price": {
-        "amount": 139,
-        "currency": "USD"
-      },
-      "variants": [
-        {
-          "id": "p8v1",
-          "title": "Default",
-          "price": {
-            "amount": 139,
-            "currency": "USD"
-          },
-          "available": true
-        }
-      ],
-      "tags": [
-        "grinder",
-        "steel"
-      ],
-      "collectionHandles": [
-        "gear"
-      ]
-    },
-    {
-      "id": "p9",
-      "handle": "pour-over-kit",
-      "title": "Pour-Over Kit",
-      "description": "Double-wall glass dripper, server and 40 filters. Everything the slow morning needs in one box.",
-      "images": [
-        {
-          "src": "/products/pour-over-kit.jpg",
-          "alt": "Pour-Over Kit"
-        }
-      ],
-      "price": {
-        "amount": 54,
-        "currency": "USD"
-      },
-      "compareAtPrice": {
-        "amount": 68,
-        "currency": "USD"
-      },
-      "variants": [
-        {
-          "id": "p9v1",
-          "title": "Default",
-          "price": {
-            "amount": 54,
-            "currency": "USD"
-          },
-          "available": true
-        }
-      ],
-      "tags": [
-        "pour-over",
-        "glass",
-        "sale"
-      ],
-      "collectionHandles": [
-        "gear"
-      ]
-    },
-    {
-      "id": "p10",
-      "handle": "gooseneck-kettle",
-      "title": "Gooseneck Kettle",
-      "description": "600 ml, thermometer in the lid, a spout that pours exactly where you look. Stovetop and induction.",
-      "images": [
-        {
-          "src": "/products/gooseneck-kettle.jpg",
-          "alt": "Gooseneck Kettle"
-        }
-      ],
-      "price": {
-        "amount": 62,
-        "currency": "USD"
-      },
-      "variants": [
-        {
-          "id": "p10v1",
-          "title": "Default",
-          "price": {
-            "amount": 62,
-            "currency": "USD"
-          },
-          "available": true
-        }
-      ],
-      "tags": [
-        "kettle",
-        "steel"
-      ],
-      "collectionHandles": [
-        "gear"
-      ]
-    },
-    {
-      "id": "p11",
-      "handle": "espresso-capsules",
-      "title": "Espresso Capsules ×30",
-      "description": "The Midnight Espresso profile, sealed at peak aroma. Aluminium, fully recyclable, Nespresso-compatible.",
-      "images": [
-        {
-          "src": "/products/espresso-capsules.jpg",
-          "alt": "Espresso Capsules ×30"
-        }
-      ],
-      "price": {
-        "amount": 19,
-        "currency": "USD"
-      },
-      "variants": [
-        {
-          "id": "p11v1",
-          "title": "30 caps",
-          "price": {
-            "amount": 19,
-            "currency": "USD"
-          },
-          "available": true
-        },
-        {
-          "id": "p11v2",
-          "title": "60 caps",
-          "price": {
-            "amount": 19,
-            "currency": "USD"
-          },
-          "available": true
-        }
-      ],
-      "tags": [
-        "capsules",
-        "espresso"
-      ],
-      "collectionHandles": [
-        "capsules"
-      ]
-    },
-    {
-      "id": "p12",
-      "handle": "starter-gift-set",
-      "title": "The Starter Gift Set",
-      "description": "Two 250 g coffees, the Roast Mug and a pour-over dripper in a matte black box. The safest excellent gift in coffee.",
-      "images": [
-        {
-          "src": "/products/starter-gift-set.jpg",
-          "alt": "The Starter Gift Set"
-        }
-      ],
-      "price": {
-        "amount": 59,
-        "currency": "USD"
-      },
-      "compareAtPrice": {
-        "amount": 72,
-        "currency": "USD"
-      },
-      "variants": [
-        {
-          "id": "p12v1",
-          "title": "Default",
-          "price": {
-            "amount": 59,
-            "currency": "USD"
-          },
-          "available": true
-        }
-      ],
-      "tags": [
-        "gift",
-        "box"
-      ],
-      "collectionHandles": [
-        "gifts"
-      ]
+      "meta": {
+        "origin": "Boxed set",
+        "notes": "3 travel sizes",
+        "format": "Gift box"
+      }
     }
   ]
 }

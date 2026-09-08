@@ -4,19 +4,19 @@
  */
 
 export const SITE = {
-  name: 'Ember',
-  defaultTitle: 'Ember — coffee roasted past midnight',
+  name: 'Verdant',
+  defaultTitle: 'Verdant — botanical skincare, grown slow',
   defaultDescription:
-    'Demo storefront for astro-njx-roast: a dark-luxury coffee theme for Astro. Mock data out of the box, Shopify with two env vars.',
-  logoDark: '/logo/ember-dark.svg', // dark mark — shown on the light (latte) theme
-  logoLight: '/logo/ember-light.svg', // light mark — shown on the dark theme
-  repoUrl: 'https://github.com/njbSaab/astro-njx-roast',
+    'Demo storefront for astro-njx-verdant: a botanical apothecary theme for Astro. Mock data out of the box, Shopify with two env vars.',
+  logoDark: '/logo/verdant-dark.svg', // dark mark — shown on the light theme
+  logoLight: '/logo/verdant-light.svg', // light mark — shown on the dark theme
+  repoUrl: 'https://github.com/njbSaab/astro-njx-verdant',
   authorUrl: 'https://njxui.dev',
 } as const;
 
 export const ANNOUNCEMENT = {
-  text: 'Free shipping over $50 · −10% on your first order with code',
-  promoCode: 'EMBER10',
+  text: 'Free shipping over $60 · −10% on your first ritual with code',
+  promoCode: 'VERDANT10',
   copiedLabel: 'Copied ✓',
   linkLabel: 'If you star the theme, I’ll be happy ♡',
   linkHref: SITE.repoUrl,
@@ -24,10 +24,10 @@ export const ANNOUNCEMENT = {
 
 export const HEADER = {
   navLinks: [
-    { label: 'Coffee', href: '/collections/coffee' },
-    { label: 'Creamers', href: '/collections/creamers' },
-    { label: 'Gear', href: '/collections/gear' },
-    { label: 'Merch', href: '/collections/merch' },
+    { label: 'Skincare', href: '/collections/skincare' },
+    { label: 'Body', href: '/collections/body' },
+    { label: 'Hair', href: '/collections/hair' },
+    { label: 'Rituals', href: '/collections/sets' },
   ],
   aria: {
     search: 'Search',
@@ -39,28 +39,28 @@ export const HEADER = {
 } as const;
 
 export const SEARCH = {
-  placeholder: 'Search the roastery…',
+  placeholder: 'Search the apothecary…',
   escHint: 'Esc',
-  emptyText: 'Nothing found — try “espresso”, “grinder” or “gift”.',
+  emptyText: 'Nothing found — try “serum”, “candle” or “gift”.',
 } as const;
 
 export const FOOTER = {
   tagline:
-    'Coffee roasted past midnight. A demo store for the astro-njx-roast theme — every product here is fictional, the checkout is real.',
+    'Botanical skincare, grown slow. A demo store for the astro-njx-verdant theme — every product here is fictional, the checkout is real.',
   columns: [
     {
       title: 'Shop',
       links: [
-        { label: 'Premium coffee', href: '/collections/coffee' },
-        { label: 'Creamers', href: '/collections/creamers' },
-        { label: 'Brew gear', href: '/collections/gear' },
-        { label: 'Merch & objects', href: '/collections/merch' },
-        { label: 'Capsules', href: '/collections/capsules' },
-        { label: 'Gift sets', href: '/collections/gifts' },
+        { label: 'Skincare', href: '/collections/skincare' },
+        { label: 'Body care', href: '/collections/body' },
+        { label: 'Hair care', href: '/collections/hair' },
+        { label: 'Candles', href: '/collections/candles' },
+        { label: 'Tools', href: '/collections/tools' },
+        { label: 'Ritual sets', href: '/collections/sets' },
       ],
     },
     {
-      title: 'Roastery',
+      title: 'Atelier',
       links: [
         { label: 'About', href: '/about' },
         { label: 'Contacts', href: '/contacts' },
@@ -83,8 +83,8 @@ export const FOOTER = {
 } as const;
 
 export const THANKS_MODAL = {
-  emoji: '☕️',
-  title: 'Thanks — the kettle is on!',
+  emoji: '🌿',
+  title: 'Thanks — your ritual is on its way!',
   text: 'This is a demo store, so nothing was charged. If the theme feels right, a star on GitHub would make my day ♡',
   starLabel: '⭐️ Star on GitHub',
   starHref: SITE.repoUrl,
@@ -99,7 +99,7 @@ export const CART = {
   ariaClear: 'Clear cart',
   ariaClose: 'Close cart',
   emptyLine1: 'Your cart is empty.',
-  emptyLine2: 'Shipping is on us over $50.',
+  emptyLine2: 'Shipping is on us over $60.',
   subtotalLabel: 'Subtotal',
   shippingNote: 'Shipping and taxes calculated at checkout.',
   checkoutLabel: 'Checkout',
@@ -115,12 +115,12 @@ export const NAV_DRAWER = {
   ariaClose: 'Close menu',
   home: { label: 'Home', href: '/' },
   collections: [
-    { label: 'Premium coffee', href: '/collections/coffee' },
-    { label: 'Creamers', href: '/collections/creamers' },
-    { label: 'Brew gear', href: '/collections/gear' },
-    { label: 'Merch & objects', href: '/collections/merch' },
-    { label: 'Capsules', href: '/collections/capsules' },
-    { label: 'Gift sets', href: '/collections/gifts' },
+    { label: 'Skincare', href: '/collections/skincare' },
+    { label: 'Body care', href: '/collections/body' },
+    { label: 'Hair care', href: '/collections/hair' },
+    { label: 'Candles', href: '/collections/candles' },
+    { label: 'Tools', href: '/collections/tools' },
+    { label: 'Ritual sets', href: '/collections/sets' },
   ],
   pages: [
     { label: 'About', href: '/about' },

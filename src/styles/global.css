@@ -1,19 +1,19 @@
 @import 'tailwindcss';
 
-/* ── njX Roast design tokens ────────────────────────────────────
-   Dark-luxury coffee: espresso black, cream text, roasted copper accent.
-   Headlines & UI: Archivo (swap for Uni Sans by editing --font-* below
-   and self-hosting the files — the tokens are the only touch point).
-   Default theme is DARK; the toggle switches to a light "latte" mode. */
+/* ── Verdant design tokens ──────────────────────────────────────
+   Botanical apothecary: deep forest green, cream text, sage-brass accent.
+   Headlines & UI: Archivo (swap fonts by editing --font-* below —
+   the tokens are the only touch point).
+   Default theme is DARK botanical; the toggle switches to a light mode. */
 @theme {
-  --color-paper: #120d0a;
-  --color-tile: #1e1712;
-  --color-ink: #f4ede4;
-  --color-muted: #a3937f;
-  --color-line: #32281f;
-  --color-brand: #c8894a;
-  --color-brand-deep: #a96f35;
-  --color-brand-soft: #2a2018;
+  --color-paper: #0f1d16;
+  --color-tile: #172b20;
+  --color-ink: #f2efe4;
+  --color-muted: #96a894;
+  --color-line: #29402f;
+  --color-brand: #b4a44a;
+  --color-brand-deep: #93842f;
+  --color-brand-soft: #1d3326;
 
   --font-display: 'Archivo', system-ui, sans-serif;
   --font-sans: 'Archivo', system-ui, sans-serif;
@@ -24,16 +24,16 @@
   --radius-2xl: 10px;
 }
 
-/* Latte mode = re-mapped tokens; every bg-paper/text-ink utility follows. */
+/* Light mode = re-mapped tokens; every bg-paper/text-ink utility follows. */
 .dark {
-  --color-paper: #f5efe7;
-  --color-tile: #eae0d1;
-  --color-ink: #241b12;
-  --color-muted: #7d6f5c;
-  --color-line: #d9ccb8;
-  --color-brand: #8a5a24;
-  --color-brand-deep: #6f4519;
-  --color-brand-soft: #f0e2cc;
+  --color-paper: #e9f1d8;
+  --color-tile: #f3f8e7;
+  --color-ink: #1b291a;
+  --color-muted: #5c7052;
+  --color-line: #c6d5ab;
+  --color-brand: #55801f;
+  --color-brand-deep: #416317;
+  --color-brand-soft: #dcead9;
 }
 /* Logo swap: dark mark on light theme, light mark on dark theme */
 .logo-on-dark {
@@ -118,13 +118,13 @@ body.qv-open #site-header {
 
 /* ── Footer: always espresso-dark regardless of theme (local token remap) ── */
 .site-footer {
-  --color-paper: #0d0906;
-  --color-tile: #17110c;
-  --color-ink: #f4ede4;
-  --color-muted: #a3937f;
-  --color-line: #2b211a;
-  background: #0d0906;
-  color: #f4ede4;
+  --color-paper: #0a150f;
+  --color-tile: #122419;
+  --color-ink: #f2efe4;
+  --color-muted: #96a894;
+  --color-line: #223829;
+  background: #0a150f;
+  color: #f2efe4;
 }
 .site-footer .tech-row img {
   filter: grayscale(1) invert(1) contrast(0.8);

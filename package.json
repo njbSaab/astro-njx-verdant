@@ -1,5 +1,5 @@
 {
-  "name": "astro-njx-store",
+  "name": "astro-njx-verdant",
   "type": "module",
   "version": "0.1.0",
   "description": "Ecommerce storefront starter: Astro + Tailwind v4 — works out of the box with mock data, connects to Shopify Storefront API with two env vars.",

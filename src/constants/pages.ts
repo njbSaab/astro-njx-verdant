@@ -6,37 +6,37 @@ import { SITE } from './components';
 
 export const HOME = {
   hero: {
-    title: 'Roasted past midnight.',
-    text: 'Small-batch beans, barista-grade creamers and the hardware behind a serious cup — sealed at peak aroma and shipped the same week.',
-    image: { src: '/products/hero.jpg', alt: 'Pour-over brewing on a wooden counter in warm light' },
+    title: 'Grown slow. Bottled quiet.',
+    text: 'Small-batch botanical skincare — cold-pressed oils, garden-grown herbs and rituals that ask five honest minutes of your evening.',
+    image: { src: '/products/hero.jpg', alt: 'Dark botanical leaves in soft light' },
   },
   // 6 category tiles overlap the hero in a staggered 2-1-2-1 layout
   categoryShelf: {
     images: {
-      coffee: '/products/midnight-espresso.jpg',
-      creamers: '/products/oat-cloud-creamer.jpg',
-      merch: '/products/roast-mug.jpg',
-      gear: '/products/precision-grinder.jpg',
-      capsules: '/products/espresso-capsules.jpg',
-      gifts: '/products/starter-gift-set.jpg',
+      skincare: '/products/botanical-face-serum.jpg',
+      body: '/products/verdant-body-oil.jpg',
+      hair: '/products/rosemary-scalp-oil.jpg',
+      candles: '/products/moss-amber-candle.jpg',
+      tools: '/products/jade-gua-sha.jpg',
+      sets: '/products/verdant-starter-set.jpg',
     } as Record<string, string>,
   },
   // three product sliders, one per featured collection
   shelves: [
-    { collection: 'coffee', title: 'Premium Coffee', allLabel: 'All coffee' },
-    { collection: 'gear', title: 'Brew Gear', allLabel: 'All gear' },
-    { collection: 'creamers', title: 'Premium Creamers', allLabel: 'All creamers' },
+    { collection: 'skincare', title: 'Skincare', allLabel: 'All skincare' },
+    { collection: 'body', title: 'Body Care', allLabel: 'All body care' },
+    { collection: 'sets', title: 'Ritual Sets', allLabel: 'All sets' },
   ],
   services: [
     {
       icon: 'truck',
       title: 'Free delivery',
-      text: 'Flat $4.99 shipping. Free on every order over $50.',
+      text: 'Flat $4.99 shipping. Free on every order over $60.',
     },
     {
       icon: 'mail',
       title: 'Newsletter',
-      text: 'One more cup? First word on new roasts and restocks.',
+      text: 'Seasonal harvests, restocks and one good recipe a month.',
     },
     {
       icon: 'shield',
@@ -46,15 +46,15 @@ export const HOME = {
     {
       icon: 'chat',
       title: 'Real support',
-      text: 'A question? A human roaster answers within a day.',
+      text: 'A question about your skin? A human herbalist answers within a day.',
     },
   ],
   colophon: {
-    eyebrow: 'astro-njx-roast · free ecommerce theme for Astro',
-    title: 'This roastery is a theme. Take it.',
-    text: 'Cart, search, saved-for-later, the quick-view popup, checkout — all of it is astro-njx-roast, a static storefront you can fork today. Point one env var at your Shopify store and these pages rebuild from your real catalog.',
+    eyebrow: 'astro-njx-verdant · free ecommerce theme for Astro',
+    title: 'This apothecary is a theme. Take it.',
+    text: 'Cart, search, saved-for-later, the quick-view popup, checkout — all of it is astro-njx-verdant, a static storefront you can fork today. Point one env var at your Shopify store and these pages rebuild from your real catalog.',
     cta: { label: 'Get the theme on GitHub', href: SITE.repoUrl },
-    image: { src: '/products/banner.jpg', alt: 'Portafilter and fresh grounds on a metal counter' },
+    image: { src: '/products/banner.jpg', alt: 'Hands giving a botanical oil massage' },
   },
 } as const;
 
@@ -78,45 +78,45 @@ export const PRODUCT = {
   addToCart: 'Add to cart',
   accordion: [
     {
-      title: 'Freshness & storage',
-      text: 'Roast date on every bag; we ship within the week of roasting. Keep it sealed, dark and away from the fridge — ground coffee is happiest used within three weeks.',
+      title: 'Ingredients & shelf life',
+      text: 'Full INCI on every label, batch date on the base. Our formulas are preservative-light — keep them cool, closed and out of direct sun, and use within six months of opening.',
     },
     {
       title: 'Shipping & returns',
-      text: 'Flat $4.99, free over $50, shipped in 1–2 days. Unopened products return free for 30 days — reply to your order email and we send a label.',
+      text: 'Flat $4.99, free over $60, shipped in 1–2 days. Unopened products return free for 30 days — reply to your order email and we send a label.',
     },
   ],
   relatedTitle: 'Pairs well with',
   trust: {
-    delivery: 'Ships in 1–2 days · Free over $50',
-    returns: '30-day returns · Roast date on every bag',
+    delivery: 'Ships in 1–2 days · Free over $60',
+    returns: '30-day returns · Batch date on every jar',
   },
 } as const;
 
 export const ABOUT = {
   meta: {
-    title: 'About — Ember',
-    description: 'Who roasts Ember: a night-shift roastery obsessed with peak aroma.',
+    title: 'About — Verdant',
+    description: 'Who makes Verdant: a garden-first apothecary blending skincare in small batches.',
   },
   hero: {
-    title: 'We roast when the city sleeps.',
+    title: 'It starts in a garden.',
     paragraphs: [
-      'Ember started with a five-kilo roaster in a rented garage and a habit of working after midnight — the only time the phone stops ringing and you can hear the first crack properly. The habit stuck; the garage grew into a roastery.',
-      'We buy from farms we can name, roast in small batches, and seal every bag the same day. When a lot runs out, the coffee changes with the season — that is the point.',
+      'Verdant began as a herbalist’s bench in a greenhouse — sage, rosemary and calendula grown two metres from the pot they were infused in. The bench grew into a workshop; the recipes stayed the size of a saucepan.',
+      'We cold-press, macerate and pour in batches small enough to date by hand. When a harvest runs out, the formula waits for the next one — that is the point.',
     ],
-    image: { src: '/products/hero.jpg', alt: 'The roastery counter at night' },
+    image: { src: '/products/hero.jpg', alt: 'Dark botanical leaves in the workshop' },
   },
   numbers: [
-    { num: '2019', label: 'first batch roasted' },
-    { num: '5 kg', label: 'roaster we still use' },
-    { num: '38', label: 'farms we buy from' },
-    { num: '0', label: 'bags older than a week' },
+    { num: '2020', label: 'first balm poured' },
+    { num: '14', label: 'herbs in the garden' },
+    { num: '40 L', label: 'largest batch we make' },
+    { num: '0', label: 'synthetic fragrances' },
   ],
   themeBlock: {
     eyebrow: 'The honest part',
-    title: 'This roastery is a demo. The theme is real.',
+    title: 'This apothecary is a demo. The theme is real.',
     textHtml:
-      'The garage, the night shifts, the 38 farms — all invented to show <strong class="font-semibold text-ink">astro-njx-roast</strong>, a free dark-luxury ecommerce theme for Astro, working at full speed. Fork it, swap the catalog, and you have a store of your own. An extended Pro version is on the way.',
+      'The greenhouse, the saucepan batches, the 14 herbs — all invented to show <strong class="font-semibold text-ink">astro-njx-verdant</strong>, a free botanical ecommerce theme for Astro, working at full speed. Fork it, swap the catalog, and you have a store of your own. An extended Pro version is on the way.',
     cta: { label: 'Get it on GitHub', href: SITE.repoUrl },
     howTitle: 'How the integration works',
     howItemsHtml: [
@@ -127,28 +127,28 @@ export const ABOUT = {
     ],
   },
   cta: {
-    title: 'Questions about a roast?',
-    text: 'Write to us — the person who roasted it will probably answer.',
-    button: { label: 'Contact the roastery', href: '/contacts' },
+    title: 'Questions about your skin?',
+    text: 'Write to us — the person who poured your jar will probably answer.',
+    button: { label: 'Contact the atelier', href: '/contacts' },
   },
 } as const;
 
 export const CONTACTS = {
   meta: {
-    title: 'Contacts — Ember',
-    description: 'Orders, wholesale, brew advice — write to the Ember roastery.',
+    title: 'Contacts — Verdant',
+    description: 'Orders, stockists, skin advice — write to the Verdant atelier.',
   },
-  title: 'Talk to the roastery',
-  text: 'Orders, wholesale, or which grind fits your machine — ask. A human answers within a day.',
+  title: 'Talk to the atelier',
+  text: 'Orders, stockists, or which oil suits your skin — ask. A human answers within a day.',
   cards: {
     email: {
       title: 'Email',
-      address: 'hello@ember.demo',
+      address: 'hello@verdant.demo',
       note: 'Add your order number for the fastest reply.',
     },
     warehouse: {
-      title: 'Roastery',
-      lines: ['Unit 9, 4 Furnace Lane', 'Rotterdam — visits by appointment'],
+      title: 'Atelier',
+      lines: ['Glasshouse 3, 11 Fern Walk', 'Ghent — visits by appointment'],
     },
     elsewhere: {
       title: 'Elsewhere',
@@ -160,11 +160,11 @@ export const CONTACTS = {
   },
   form: {
     nameLabel: 'Name',
-    namePlaceholder: 'Sam Brewer',
+    namePlaceholder: 'Sage Willow',
     emailLabel: 'Email',
     emailPlaceholder: 'you@example.com',
     messageLabel: 'Message',
-    messagePlaceholder: 'Which roast, which brewer, which grind?',
+    messagePlaceholder: 'Which skin, which season, which ritual?',
     submitLabel: 'Send message',
     demoNote: "Demo mode — the form isn't wired to a backend. Point it at your email service or an API route.",
   },
@@ -172,61 +172,61 @@ export const CONTACTS = {
 
 export const FAQ_PAGE = {
   meta: {
-    title: 'FAQ — Ember',
-    description: 'Freshness, grind, shipping, returns — answers to the questions the roastery hears most.',
+    title: 'FAQ — Verdant',
+    description: 'Ingredients, shelf life, shipping, returns — answers to the questions the atelier hears most.',
   },
   title: 'Asked often',
   introHtml:
     'Short answers, no legal fog. Missing something? <a href="/contacts" class="text-brand underline underline-offset-2">Write to us.</a>',
   items: [
     {
-      q: 'How fresh is the coffee, really?',
-      a: 'We roast Monday to Wednesday and ship the same week. The roast date is printed on every bag — if yours arrives older than two weeks, write to us; it should not happen.',
+      q: 'Are the products really natural?',
+      a: 'Every formula is plant-based with a full INCI on the label. No synthetic fragrance, no mineral oil. “Natural” is a loose word — so we list everything and let you read.',
     },
     {
-      q: 'Whole bean or ground?',
-      a: 'Every coffee ships whole bean by default. Need it ground? Leave a note at checkout with your brewer and we grind to match, free.',
+      q: 'My oil looks cloudy / smells different than last time.',
+      a: 'That is the harvest, not a defect. Cold-pressed oils shift with the season — colour and scent drift a little from batch to batch. The batch date is on every base.',
     },
     {
       q: 'How long does shipping take?',
-      a: 'Orders leave within 1–2 business days. EU: 2–4 days. Everywhere else: 5–10. Flat $4.99, free over $50, tracked always.',
+      a: 'Orders leave within 1–2 business days. EU: 2–4 days. Everywhere else: 5–10. Flat $4.99, free over $60, tracked always.',
     },
     {
-      q: 'Do the capsules fit my machine?',
-      a: 'They are Nespresso Original compatible, aluminium and fully recyclable. Vertuo machines are the one exception — those capsules are a different shape entirely.',
+      q: 'Which ritual should I start with?',
+      a: 'The Starter Set exists for exactly this — travel sizes of the serum, body oil and soap bar. Or write to us with your skin type and we assemble one by hand.',
     },
     {
-      q: 'Do you do wholesale?',
-      a: 'For cafés and offices — yes, from 5 kg a month. Email hello@ember.demo with your volumes and machine setup.',
+      q: 'Do you supply salons and spas?',
+      a: 'Yes — treatment sizes and open-shelf retail, from small monthly volumes. Email hello@verdant.demo with your treatment menu.',
     },
     {
-      q: 'Is this a real roastery?',
-      a: 'It is a demo for the astro-njx-roast theme: the products are fictional, but everything else works — cart, quick view, checkout flow, search. Grab the theme on GitHub and make it your real store.',
+      q: 'Is this a real apothecary?',
+      a: 'It is a demo for the astro-njx-verdant theme: the products are fictional, but everything else works — cart, quick view, checkout flow, search. Grab the theme on GitHub and make it your real store.',
     },
   ],
 } as const;
 
 export const ACCOUNT = {
   meta: {
-    title: 'Account — Ember',
-    description: 'Sign in to your Ember account or create a new one.',
+    title: 'Account — Verdant',
+    description: 'Sign in to your Verdant account or create a new one.',
   },
   tabs: { login: 'Sign in', register: 'Create account' },
   login: {
     title: 'Welcome back',
-    sub: 'Orders, subscriptions and faster checkout.',
+    sub: 'Orders, refills and faster checkout.',
     submit: 'Sign in',
     demoNote: 'Demo mode — sign-in is a stub. Connect Shopify Customer Accounts or your own backend here.',
   },
   register: {
-    title: 'Join Ember',
-    sub: 'One account for orders and first word on new roasts.',
+    title: 'Join Verdant',
+    sub: 'One account for orders and first word on new harvests.',
     submit: 'Create account',
     demoNote: 'Demo mode — account creation is a stub. Connect Shopify Customer Accounts or your own backend here.',
   },
   fields: {
     nameLabel: 'Name',
-    namePlaceholder: 'Sam Brewer',
+    namePlaceholder: 'Sage Willow',
     emailLabel: 'Email',
     emailPlaceholder: 'you@example.com',
     passwordLabel: 'Password',
@@ -238,17 +238,17 @@ export const ACCOUNT = {
 } as const;
 
 export const NOT_FOUND = {
-  meta: { title: 'Page not found — Ember' },
-  title: 'Nothing brewing here.',
-  text: 'This page moved, sold out, or never existed. The good stuff is one click away.',
-  ctaPrimary: { label: 'Back to the roastery', href: '/' },
-  ctaSecondary: { label: 'Get coffee instead', href: '/collections/coffee' },
+  meta: { title: 'Page not found — Verdant' },
+  title: 'Nothing growing here.',
+  text: 'This page moved, sold out, or never took root. The good stuff is one click away.',
+  ctaPrimary: { label: 'Back to the atelier', href: '/' },
+  ctaSecondary: { label: 'Browse skincare instead', href: '/collections/skincare' },
 } as const;
 
 export const PRIVACY = {
   meta: {
-    title: 'Privacy Policy — Ember',
-    description: 'How Ember handles your data: what we collect, why, and what we never do.',
+    title: 'Privacy Policy — Verdant',
+    description: 'How Verdant handles your data: what we collect, why, and what we never do.',
   },
   title: 'Privacy Policy',
   updated: 'Last updated: September 2026 · Demo content — replace with your own policy.',
@@ -259,7 +259,7 @@ export const PRIVACY = {
     },
     {
       h: 'What we never do',
-      p: "We don't sell your data, we don't run third-party ad trackers, and we don't email you unless it's about an order or you explicitly asked for news of new roasts.",
+      p: "We don't sell your data, we don't run third-party ad trackers, and we don't email you unless it's about an order or you explicitly asked for news of new harvests.",
     },
     {
       h: 'Payments',
@@ -274,15 +274,15 @@ export const PRIVACY = {
 
 export const TERMS = {
   meta: {
-    title: 'Terms of Service — Ember',
-    description: 'The short, honest terms for shopping at Ember: orders, shipping, returns and refunds.',
+    title: 'Terms of Service — Verdant',
+    description: 'The short, honest terms for shopping at Verdant: orders, shipping, returns and refunds.',
   },
   title: 'Terms of Service',
   updated: 'Last updated: September 2026 · Demo content — replace with your own terms.',
   sections: [
     {
       h: 'Orders',
-      p: 'An order is confirmed when you get the confirmation email. If a roast sells out after you paid, we refund it the same day and tell you when the next batch lands.',
+      p: 'An order is confirmed when you get the confirmation email. If a batch sells out after you paid, we refund it the same day and tell you when the next one is poured.',
     },
     {
       h: 'Shipping',
@@ -290,7 +290,7 @@ export const TERMS = {
     },
     {
       h: 'Returns & refunds',
-      p: '30 days for unopened products. Opened coffee is the honest exception — for obvious reasons. Refunds go back to the original payment method.',
+      p: '30 days for unopened products. Opened jars are the honest exception — for obvious reasons. Refunds go back to the original payment method.',
     },
     {
       h: 'The fine print',
