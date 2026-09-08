@@ -26,14 +26,14 @@
 
 /* Light mode = re-mapped tokens; every bg-paper/text-ink utility follows. */
 .dark {
-  --color-paper: #e9f1d8;
-  --color-tile: #f3f8e7;
-  --color-ink: #1b291a;
-  --color-muted: #5c7052;
-  --color-line: #c6d5ab;
-  --color-brand: #55801f;
-  --color-brand-deep: #416317;
-  --color-brand-soft: #dcead9;
+  --color-paper: #eeeccd;
+  --color-tile: #f7f5e1;
+  --color-ink: #23271a;
+  --color-muted: #6e6f52;
+  --color-line: #d8d4a8;
+  --color-brand: #8f822a;
+  --color-brand-deep: #6e6420;
+  --color-brand-soft: #e9e5bf;
 }
 /* Logo swap: dark mark on light theme, light mark on dark theme */
 .logo-on-dark {
