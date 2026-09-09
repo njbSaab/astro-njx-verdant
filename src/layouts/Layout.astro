@@ -200,32 +200,34 @@ const searchIndex = JSON.stringify(
 
     <!-- ── Quick view popup: dark blurred overlay, white product card,
          the header stays visible above it (spec: cartenoire-style) ── -->
-    <div id="quickview" class="fixed inset-0 z-30 hidden overflow-y-auto pt-24 pb-10 px-5" role="dialog" aria-modal="true" aria-label="Product quick view">
+    <div id="quickview" class="fixed inset-0 z-30 hidden overflow-y-auto pt-[88px] pb-6 px-5" role="dialog" aria-modal="true" aria-label="Product quick view">
       <div class="qv-backdrop absolute inset-0" data-qv-close></div>
-      <div class="relative mx-auto grid w-full max-w-3xl overflow-hidden rounded-xl bg-white text-[#120d0a] shadow-2xl md:grid-cols-[1fr_1.1fr]">
-        <button data-qv-close class="absolute right-3 top-3 z-10 rounded-md bg-white/80 p-2 text-[#120d0a] backdrop-blur transition hover:bg-[#120d0a] hover:text-white" aria-label="Close quick view">
+      <div class="flex min-h-full items-center justify-center">
+      <div class="relative mx-auto grid w-full max-w-3xl overflow-hidden rounded-xl border border-line bg-paper text-ink shadow-2xl md:grid-cols-[1fr_1.1fr]">
+        <button data-qv-close class="absolute right-3 top-3 z-10 rounded-md bg-paper/80 p-2 text-ink backdrop-blur transition hover:bg-ink hover:text-paper" aria-label="Close quick view">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
         <img data-qv-img src="" alt="" class="h-64 w-full object-cover md:h-full" />
         <div class="flex flex-col gap-4 p-6 md:p-8">
-          <p data-qv-category class="text-[12px] font-semibold uppercase tracking-[0.18em] text-[#8a5a24]"></p>
+          <p data-qv-category class="text-[12px] font-semibold uppercase tracking-[0.18em] text-brand"></p>
           <h3 data-qv-title class="font-display text-[24px] font-black uppercase leading-tight"></h3>
           <p class="text-[18px]">
-            <s data-qv-compare class="mr-2 hidden text-[14px] text-[#9a8f83]"></s>
+            <s data-qv-compare class="mr-2 hidden text-[14px] text-muted"></s>
             <span data-qv-price class="font-bold"></span>
           </p>
-          <p data-qv-desc class="text-[14px] leading-relaxed text-[#5c534a]"></p>
+          <p data-qv-desc class="text-[14px] leading-relaxed text-muted"></p>
           <div data-qv-variants class="flex flex-wrap gap-2"></div>
           <div class="mt-auto flex gap-2 pt-2">
-            <button data-qv-add class="flex-1 rounded-md bg-[#120d0a] py-3.5 text-[14px] font-bold uppercase tracking-wide text-white transition hover:bg-[#8a5a24]">Add to cart</button>
-            <button data-qv-fav class="rounded-md border border-[#e0d6c8] px-3.5 text-[#120d0a] transition hover:border-[#8a5a24] hover:text-[#8a5a24]" aria-label="Save for later">
+            <button data-qv-add class="flex-1 rounded-md bg-ink py-3.5 text-[14px] font-bold uppercase tracking-wide text-paper transition hover:bg-brand">Add to cart</button>
+            <button data-qv-fav class="rounded-md border border-line px-3.5 text-ink transition hover:border-brand hover:text-brand" aria-label="Save for later">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 20.5c-5.5-3.6-8.5-6.9-8.5-10.4A4.6 4.6 0 0 1 8.1 5.4c1.6 0 3 .8 3.9 2.1a4.7 4.7 0 0 1 3.9-2.1 4.6 4.6 0 0 1 4.6 4.7c0 3.5-3 6.8-8.5 10.4z" />
               </svg>
             </button>
           </div>
-          <a data-qv-link href="#" class="text-center text-[13px] text-[#8a5a24] underline underline-offset-4 hover:opacity-80">Full details →</a>
+          <a data-qv-link href="#" class="text-center text-[13px] text-brand underline underline-offset-4 hover:opacity-80">Full details →</a>
         </div>
+      </div>
       </div>
     </div>
 
@@ -672,8 +674,8 @@ const searchIndex = JSON.stringify(
               <button type="button" data-qv-variant="${v.id}" data-qv-vtitle="${v.title}" ${v.available ? '' : 'disabled'}
                 aria-pressed="${v.id === qvVariant?.id}"
                 class="rounded-md border px-3.5 py-1.5 text-[13px] transition ${v.available
-                  ? 'border-[#e0d6c8] hover:border-[#120d0a] aria-pressed:border-[#8a5a24] aria-pressed:bg-[#f5ecdd] aria-pressed:font-semibold'
-                  : 'cursor-not-allowed border-[#eee6da] text-[#b3a895] line-through'}">${v.title}</button>`).join('')
+                  ? 'border-line hover:border-ink aria-pressed:border-brand aria-pressed:bg-brand-soft aria-pressed:font-semibold'
+                  : 'cursor-not-allowed border-line/60 text-muted line-through'}">${v.title}</button>`).join('')
           : '';
         qv.classList.remove('hidden');
         document.body.classList.add('qv-open');

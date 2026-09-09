@@ -103,7 +103,7 @@ html {
 /* ── Quick view: near-black blurred overlay; the header stays visible and
    adopts the same dark glass while the popup is open ── */
 .qv-backdrop {
-  background: rgba(0, 0, 0, 0.92);
+  background: rgba(6, 14, 10, 0.92);
   backdrop-filter: blur(5px);
 }
 body.qv-open {
@@ -111,7 +111,7 @@ body.qv-open {
 }
 body.qv-open #site-header {
   color: #fff;
-  background: rgba(0, 0, 0, 0.92);
+  background: rgba(6, 14, 10, 0.92);
   border-bottom-color: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(5px);
 }
