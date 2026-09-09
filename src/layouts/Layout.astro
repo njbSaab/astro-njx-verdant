@@ -85,10 +85,20 @@ const searchIndex = JSON.stringify(
     <header id="site-header" class:list={['sticky top-0 z-40 w-full transition-colors duration-300', overlayHeader ? 'header-overlay' : 'is-solid']}>
       <div>
       <nav class="mx-auto grid h-16 max-w-6xl grid-cols-[auto_1fr_auto] items-center gap-4 px-3 sm:px-5">
-        <a href="/" class="flex items-center gap-2.5 justify-self-start">
-          <img src={SITE.logoLight} alt="" class="h-8 w-8 rounded-md" />
-          <span class="font-display text-[20px] font-extrabold uppercase tracking-[0.12em]">{SITE.name}</span>
-        </a>
+        <div class="flex items-center gap-1.5 justify-self-start">
+          <a href="/" class="flex items-center gap-2.5">
+            <img src={SITE.logoLight} alt="" class="h-8 w-8 rounded-md" />
+            <span class="font-display text-[20px] font-extrabold uppercase tracking-[0.12em]">{SITE.name}</span>
+          </a>
+          <button data-theme-toggle class="rounded-md p-2 transition hover:bg-ink/10" aria-label={HEADER.aria.theme}>
+            <svg data-icon-moon width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+            </svg>
+            <svg data-icon-sun class="hidden" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <circle cx="12" cy="12" r="4.5" /><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8" />
+            </svg>
+          </button>
+        </div>
         <div class="hidden items-center justify-center gap-2 text-[14px] font-medium sm:flex">
           {HEADER.navLinks.map((l) => (
             <a href={l.href} class={navCls(l.href, "rounded-md border border-transparent px-3.5 py-1.5 transition hover:border-current", "border-current")}>{l.label}</a>
