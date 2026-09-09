@@ -8,6 +8,8 @@ export const HOME = {
   hero: {
     title: 'Grown slow. Bottled quiet.',
     text: 'Small-batch botanical skincare — cold-pressed oils, garden-grown herbs and rituals that ask five honest minutes of your evening.',
+    cta: { label: 'Get the theme on GitHub', href: SITE.repoUrl },
+    cta2: { label: 'All themes & Pro', href: SITE.themesUrl },
     image: { src: '/products/hero.jpg', alt: 'Dark botanical leaves in soft light' },
   },
   // 6 category tiles overlap the hero in a staggered 2-1-2-1 layout
