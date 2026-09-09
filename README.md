@@ -1,5 +1,7 @@
 # astro-njx-verdant — botanical apothecary ecommerce theme for Astro
 
+> Part of **[njX Astro Themes](https://njxui.dev/themes)** — ecommerce storefronts & landing pages by one author, free today, Pro versions on the way.
+
 A complete storefront built with **Astro 5 + Tailwind CSS v4** in a deep-green botanical
 voice: dark forest palette with a brass accent, a light sage mode, quick-view product
 popups — wired for **Shopify** out of the box and deployable to **Cloudflare Pages**
