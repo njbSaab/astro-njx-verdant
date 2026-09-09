@@ -612,6 +612,287 @@
         "notes": "3 travel sizes",
         "format": "Gift box"
       }
+    },
+    {
+      "id": "p15",
+      "handle": "watermelon-glow-jelly",
+      "title": "Watermelon Glow Jelly",
+      "description": "A water-light jelly moisturizer with watermelon extract and hyaluronic acid. Summer skin, bottled — no shine, just glow.",
+      "images": [
+        {
+          "src": "/products/watermelon-glow-jelly.jpg",
+          "alt": "Watermelon Glow Jelly"
+        }
+      ],
+      "price": {
+        "amount": 24,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p15v1",
+          "title": "50 ml",
+          "price": {
+            "amount": 24,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "moisturizer",
+        "glow"
+      ],
+      "collectionHandles": [
+        "skincare"
+      ],
+      "meta": {
+        "origin": "Watermelon · hyaluronic",
+        "notes": "Dehydrated, dull skin",
+        "format": "50 ml jar"
+      }
+    },
+    {
+      "id": "p16",
+      "handle": "herbal-facial-steam",
+      "title": "Herbal Facial Steam",
+      "description": "Rosemary, chamomile and mint for a five-minute kitchen-spa. Pour hot water, lean in, breathe — pores open, week closes.",
+      "images": [
+        {
+          "src": "/products/herbal-facial-steam.jpg",
+          "alt": "Herbal Facial Steam"
+        }
+      ],
+      "price": {
+        "amount": 16,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p16v1",
+          "title": "8 sessions",
+          "price": {
+            "amount": 16,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "ritual",
+        "herbs"
+      ],
+      "collectionHandles": [
+        "skincare"
+      ],
+      "meta": {
+        "origin": "Rosemary · chamomile · mint",
+        "notes": "Congested skin, slow evenings",
+        "format": "8 sachets"
+      }
+    },
+    {
+      "id": "p17",
+      "handle": "honey-cleansing-balm",
+      "title": "Honey Cleansing Balm",
+      "description": "Raw honey and mandarin peel in a melt-on-skin balm. Dissolves the day, rinses clean, leaves the good kind of soft.",
+      "images": [
+        {
+          "src": "/products/honey-cleansing-balm.jpg",
+          "alt": "Honey Cleansing Balm"
+        }
+      ],
+      "price": {
+        "amount": 26,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p17v1",
+          "title": "90 ml",
+          "price": {
+            "amount": 26,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "cleanser",
+        "balm"
+      ],
+      "collectionHandles": [
+        "skincare"
+      ],
+      "meta": {
+        "origin": "Raw honey · mandarin",
+        "notes": "Dry, sensitive skin",
+        "format": "90 ml jar"
+      },
+      "compareAtPrice": {
+        "amount": 32,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "p18",
+      "handle": "citrus-body-scrub",
+      "title": "Citrus Body Scrub",
+      "description": "Crushed orange peel and cane sugar in cold-pressed oil. Wakes the skin up better than the espresso you were about to skip.",
+      "images": [
+        {
+          "src": "/products/citrus-body-scrub.jpg",
+          "alt": "Citrus Body Scrub"
+        }
+      ],
+      "price": {
+        "amount": 22,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p18v1",
+          "title": "200 g",
+          "price": {
+            "amount": 22,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "scrub",
+        "citrus"
+      ],
+      "collectionHandles": [
+        "body"
+      ],
+      "meta": {
+        "origin": "Orange peel · cane sugar",
+        "notes": "Rough elbows, gray mornings",
+        "format": "200 g jar"
+      }
+    },
+    {
+      "id": "p19",
+      "handle": "lavender-sleep-balm",
+      "title": "Lavender Sleep Balm",
+      "description": "Field-grown lavender in a slow-melt balm for pulse points. Apply, breathe out, let the day go quiet.",
+      "images": [
+        {
+          "src": "/products/lavender-sleep-balm.jpg",
+          "alt": "Lavender Sleep Balm"
+        }
+      ],
+      "price": {
+        "amount": 19,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p19v1",
+          "title": "30 ml",
+          "price": {
+            "amount": 19,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "balm",
+        "sleep"
+      ],
+      "collectionHandles": [
+        "body"
+      ],
+      "meta": {
+        "origin": "Lavender · shea",
+        "notes": "Restless evenings",
+        "format": "30 ml tin"
+      }
+    },
+    {
+      "id": "p20",
+      "handle": "facial-ritual-set",
+      "title": "Facial Ritual Set",
+      "description": "The full evening face: cleansing balm, clay mask and facial steam, boxed with a linen headband. A home spa that fits a shelf.",
+      "images": [
+        {
+          "src": "/products/facial-ritual-set.jpg",
+          "alt": "Facial Ritual Set"
+        }
+      ],
+      "price": {
+        "amount": 58,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p20v1",
+          "title": "3 products + headband",
+          "price": {
+            "amount": 58,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "set",
+        "gift"
+      ],
+      "collectionHandles": [
+        "sets"
+      ],
+      "meta": {
+        "origin": "Balm · mask · steam",
+        "notes": "Gifting, self-gifting",
+        "format": "Boxed set"
+      },
+      "compareAtPrice": {
+        "amount": 68,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "p21",
+      "handle": "hair-ritual-set",
+      "title": "Hair Ritual Set",
+      "description": "Scalp oil, silk mist and a cleansing rinse in one quiet white lineup. Hair care that reads like skincare — because it is.",
+      "images": [
+        {
+          "src": "/products/hair-ritual-set.jpg",
+          "alt": "Hair Ritual Set"
+        }
+      ],
+      "price": {
+        "amount": 49,
+        "currency": "USD"
+      },
+      "variants": [
+        {
+          "id": "p21v1",
+          "title": "3 products",
+          "price": {
+            "amount": 49,
+            "currency": "USD"
+          },
+          "available": true
+        }
+      ],
+      "tags": [
+        "set",
+        "hair"
+      ],
+      "collectionHandles": [
+        "sets"
+      ],
+      "meta": {
+        "origin": "Oil · mist · rinse",
+        "notes": "All hair types",
+        "format": "Boxed set"
+      }
     }
   ]
 }
